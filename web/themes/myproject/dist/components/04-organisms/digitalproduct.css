@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "averto";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+.dgproduct__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 120px;
+}
+
+.dgproduct__image img {
+  width: 550px;
+  height: 372px;
+  margin-left: 120px;
+}
+
+.dgproduct__title {
+  font-family: "averto", sans-serif;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 400;
+  color: #000;
+}
+
+.dgproduct__description {
+  font-family: "averto", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #565656;
+}
+/*# sourceMappingURL=../../maps/04-organisms/digitalproduct.css.map */

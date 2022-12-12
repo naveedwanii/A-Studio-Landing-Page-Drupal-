@@ -1,0 +1,28 @@
+@import '../config.all';
+
+.dgproduct__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 120px;
+}
+.dgproduct__image img {
+  width: 550px;
+  height: 372px;
+  margin-left: 120px;
+}
+.dgproduct__title {
+  font-family: $font-primary;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 400;
+  color: #000;
+}
+
+.dgproduct__description {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #565656;
+}

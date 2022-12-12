@@ -1,0 +1,41 @@
+global:
+  css:
+    theme:
+      dist/components/global.css: {}
+  js:
+    dist/components/main.js:
+      attributes:
+        type: module
+
+# averto:
+#   css:
+#     theme:
+      # fonts/averto/Averto.ttf
+
+# tailwind:
+#   css:
+#     theme:
+#       dist/components/tailwind.css: {}
+
+header:
+  css:
+    theme:
+      dist/components/04-organisms/header.css: {}
+
+businesscards:
+  css:
+    theme:
+      dist/components/04-organisms/businesscards.css: {}
+
+digitalproduct:
+  css:
+    theme:
+      dist/components/04-organisms/digitalproduct.css: {}
+
+footer:
+  css:
+    theme:
+     dist/components/04-organisms/footer.css: {}
+
+
+
