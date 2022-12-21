@@ -94,12 +94,13 @@
 
 </article> #}
 
-<div class="orclient__container">
-  <div class='orclient__1'>
-   <h2 class='orclient__title'>{{ content.field_our_title }}</h2>
-   <p class='orclient__descrip'>{{ content.field_our_description }}</p>
+{{ attach_library('myproject/our-client') }}
+<div class="ourclient__container">
+  <div class='ourclient__1'>
+   <div class='ourclient__title'>{{ content.field_our_title }}</div>
+   <div class='ourclient__descrip'>{{ content.field_our_description }}</div>
    </div>
-   <div class='orclient__2'>
-   <div class='orclient__images'>{{ content.field_our_images }}</div>
+   <div class='ourclient__2'>
+   <div class='ourclient__images'>{{ content.field_our_images }}</div>
    </div>
 </div>

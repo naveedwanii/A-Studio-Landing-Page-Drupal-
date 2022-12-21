@@ -1,0 +1,22 @@
+@import '../config.all';
+
+.what-say__container {
+  text-align: center;
+}
+
+.what-say__title {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000;
+  margin: 0;
+}
+
+.what-say__body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #757575;
+}

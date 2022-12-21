@@ -1,0 +1,36 @@
+@import '../config.all';
+
+.ourclient__container {
+  display: flex;
+  margin: 0 120px 0 120px;
+}
+
+.ourclient__title {
+  font-family: $font-primary;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  color: #000;
+  margin: 0;
+}
+
+.ourclient__descrip {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #757575;
+  margin-top: 17px;
+}
+
+.ourclient-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 49px;
+}
+
+.ourclient-img {
+  margin-left: 37px;
+  margin-right: 30px;
+}

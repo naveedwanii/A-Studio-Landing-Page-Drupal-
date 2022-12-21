@@ -29,21 +29,45 @@
     color: #000;
   }
 }
-.footer__menu__logo-container {
-  position: absolute;
-  left: 2rem;
-  .footer__menu__logo-des {
-    margin-right: 120px;
-  }
-}
+// .footer__menu__logo-container {
+//   position: absolute;
+//   left: 2rem;
+//   .footer__menu__logo-des {
+//     margin-right: 120px;
+//   }
+// }
 .footer__menu__logo-des p {
   margin-right: 120px;
-  color: red;
 }
 .footer__menu__logo-links {
   display: flex;
   a {
-    color: red;
     text-decoration: none;
+  }
+}
+
+.footer__container-block {
+  position: relative;
+  top: 12rem;
+  margin-left: 120px;
+}
+
+.footer__container-descrip {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  width: 270px;
+  color: #565656;
+}
+
+.footer__container-sociallinks {
+  div {
+    display: flex;
+    // background: url('.../../../../../images/Rectangle 31.png');
+  }
+  a {
+    text-decoration: none;
+    // text-indent: -9999px;
   }
 }

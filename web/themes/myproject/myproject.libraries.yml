@@ -37,5 +37,18 @@ footer:
     theme:
      dist/components/04-organisms/footer.css: {}
 
+what-say:
+  css:
+    theme:
+     dist/components/04-organisms/what-say.css: {}
 
+subscribe-newsletter:
+  css:
+    theme:
+     dist/components/04-organisms/subscribe-newletter.css: {}
+
+our-client:
+  css:
+    theme:
+     dist/components/04-organisms/our-client.css: {}
 

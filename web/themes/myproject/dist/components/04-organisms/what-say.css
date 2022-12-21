@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "averto";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+.what-say__container {
+  text-align: center;
+}
+
+.what-say__title {
+  font-family: "averto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000;
+  margin: 0;
+}
+
+.what-say__body {
+  font-family: "averto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #757575;
+}
+/*# sourceMappingURL=../../maps/04-organisms/what-say.css.map */

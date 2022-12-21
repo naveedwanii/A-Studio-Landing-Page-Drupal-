@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "averto";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+.subscribe-newsletter__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f4f9ff;
+  border-radius: 75px;
+  margin-left: 120px;
+  margin-right: 123px;
+}
+
+.subscribe-newsletter__title {
+  font-family: "averto", sans-serif;
+  font-size: 400;
+  font-size: 40px;
+  line-height: 49px;
+  margin-top: 98px;
+  color: #000;
+}
+
+.subscribe-newsletter__descript {
+  font-family: "averto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #757575;
+}
+
+.subscribe-newsletter__button {
+  width: 121px;
+  background: #2639ed;
+  border-radius: 60px;
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+  top: 5.6rem;
+  left: 6rem;
+}
+
+.subscribe-newsletter__button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "averto", sans-serif;
+}
+
+.subscribe-newsletter__webform input {
+  width: 479px;
+  height: 80px;
+  border: 1px solid #f1f1f1;
+  border-radius: 60px;
+  position: absolute;
+  right: 4rem;
+  top: 6rem;
+}
+
+.subscribe-newsletter__container-1 {
+  height: 292px;
+  width: 1197px;
+  text-align: center;
+}
+
+.subscribe-newsletter__container-2 {
+  background-image: url(".../../../../../images/Rectangle 31.png");
+  background-repeat: round;
+  height: 292px;
+  width: 543px;
+}
+/*# sourceMappingURL=../../maps/04-organisms/subscribe-newletter.css.map */

@@ -19,6 +19,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 120px;
+  background-image: url(".../../../../../images/Rectangle 24.png");
 }
 
 .dgproduct__image img {
@@ -29,17 +30,38 @@
 
 .dgproduct__title {
   font-family: "averto", sans-serif;
+  position: relative;
   font-size: 40px;
   line-height: 49px;
   font-weight: 400;
   color: #000;
+  margin-right: 163px;
 }
 
 .dgproduct__description {
   font-family: "averto", sans-serif;
   font-size: 16px;
+  position: relative;
   line-height: 25px;
   font-weight: 400;
   color: #565656;
+}
+
+.dgproduct__trimg {
+  height: 178px;
+  width: 178px;
+  position: absolute;
+  background-image: url(".../../../../../images/Rectangle 26.png");
+}
+
+.dgproduct__roundimg {
+  height: 129px;
+  width: 129px;
+  background: #fff5db;
+  border-radius: 100px;
+  position: absolute;
+  top: 17rem;
+  left: 33rem;
+  background-image: url(".../../../../../images/Ellipse 26.png");
 }
 /*# sourceMappingURL=../../maps/04-organisms/digitalproduct.css.map */
