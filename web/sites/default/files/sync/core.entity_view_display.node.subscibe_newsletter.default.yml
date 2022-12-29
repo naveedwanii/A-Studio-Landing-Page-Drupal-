@@ -1,0 +1,57 @@
+uuid: f84fb132-4926-49ec-b686-0f163bcaa2f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.subscibe_newsletter.body
+    - field.field.node.subscibe_newsletter.field_subscribe_button
+    - field.field.node.subscibe_newsletter.field_subscribe_webform
+    - field.field.node.subscibe_newsletter.field_title
+    - node.type.subscibe_newsletter
+  module:
+    - link
+    - text
+    - user
+    - webform
+id: node.subscibe_newsletter.default
+targetEntityType: node
+bundle: subscibe_newsletter
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subscribe_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subscribe_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

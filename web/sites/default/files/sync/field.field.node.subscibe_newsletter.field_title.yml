@@ -1,0 +1,19 @@
+uuid: eb73c92d-ba38-4174-9d86-e85b1db0dacc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.subscibe_newsletter
+id: node.subscibe_newsletter.field_title
+field_name: field_title
+entity_type: node
+bundle: subscibe_newsletter
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

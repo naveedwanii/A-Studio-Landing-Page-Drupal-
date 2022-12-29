@@ -1,0 +1,23 @@
+uuid: f3c9ffc8-4ed7-41b3-b259-079e86e31b21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.what_our_happy
+  module:
+    - text
+id: node.what_our_happy.body
+field_name: body
+entity_type: node
+bundle: what_our_happy
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

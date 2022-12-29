@@ -1,9 +1,11 @@
 @import '../config.all';
 
 .business__container {
+  // position: relative;
+  top: -30px;
   width: 308px;
   height: 379px;
-  background: #fff;
+  background: $color-white;
   box-shadow: 0px 2px 4px grey;
   border-radius: 40px;
   padding: 64px 32px 21px;
@@ -31,7 +33,7 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: #757575;
+  color: $color-grey-50;
 }
 .business-list__container {
   display: grid;
@@ -46,7 +48,7 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 49px;
-  color: #000;
+  color: $color-black;
   width: 358px;
   // margin-right: 128px;
 }
@@ -56,7 +58,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-  color: #565656;
+  color: $color-grey;
   width: 396px;
 }
 .business__dotimg {

@@ -1,0 +1,19 @@
+uuid: a611d752-3284-4a50-8de1-24938a782138
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_client_1
+    - field.storage.block_content.field_title
+id: block_content.our_client_1.field_title
+field_name: field_title
+entity_type: block_content
+bundle: our_client_1
+label: title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

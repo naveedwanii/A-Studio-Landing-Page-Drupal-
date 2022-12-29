@@ -9,6 +9,7 @@
 }
 
 .business__container {
+  top: -30px;
   width: 308px;
   height: 379px;
   background: #fff;

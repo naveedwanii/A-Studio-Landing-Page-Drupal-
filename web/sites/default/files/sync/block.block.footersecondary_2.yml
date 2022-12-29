@@ -1,0 +1,25 @@
+uuid: aa313188-5f73-42cb-bf01-925ccf804bcb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_secondary:80152ec3-4beb-4626-be3b-bf90958f9057'
+  module:
+    - block_content
+  theme:
+    - myproject
+id: footersecondary_2
+theme: myproject
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:80152ec3-4beb-4626-be3b-bf90958f9057'
+settings:
+  id: 'block_content:80152ec3-4beb-4626-be3b-bf90958f9057'
+  label: 'Footer Secondary'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

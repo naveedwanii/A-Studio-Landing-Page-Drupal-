@@ -1,0 +1,23 @@
+uuid: cfe34d05-4c31-48c7-90d9-01ed08c229a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.footer_block
+  module:
+    - text
+id: node.footer_block.body
+field_name: body
+entity_type: node
+bundle: footer_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

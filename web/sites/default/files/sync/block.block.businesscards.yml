@@ -1,0 +1,25 @@
+uuid: a2a63fb5-86a3-4726-8e10-d84a161f34c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:business_cards:7bb8dd45-9b8f-45e2-ad1c-dd87a37d26e0'
+  module:
+    - block_content
+  theme:
+    - claro
+id: businesscards
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7bb8dd45-9b8f-45e2-ad1c-dd87a37d26e0'
+settings:
+  id: 'block_content:7bb8dd45-9b8f-45e2-ad1c-dd87a37d26e0'
+  label: 'Business Cards'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

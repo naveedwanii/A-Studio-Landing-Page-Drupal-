@@ -1,0 +1,23 @@
+uuid: c2033bce-d425-4d58-b0f3-4d3c3c8ce7ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.great_digital_product
+  module:
+    - text
+id: node.great_digital_product.body
+field_name: body
+entity_type: node
+bundle: great_digital_product
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

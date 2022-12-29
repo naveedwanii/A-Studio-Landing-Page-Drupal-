@@ -1,0 +1,22 @@
+uuid: e6b1f9d8-6981-4502-8146-550a556bf5c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_secondary
+    - field.field.block_content.footer_secondary.body
+  module:
+    - text
+id: block_content.footer_secondary.default
+targetEntityType: block_content
+bundle: footer_secondary
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

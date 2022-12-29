@@ -1,0 +1,19 @@
+uuid: 30f94cfb-2c1f-4c32-bc3d-74590dd6d39c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.business_cards
+    - field.storage.block_content.field_business_title
+id: block_content.business_cards.field_business_title
+field_name: field_business_title
+entity_type: block_content
+bundle: business_cards
+label: 'Business Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

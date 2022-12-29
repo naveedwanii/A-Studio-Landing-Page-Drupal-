@@ -1,0 +1,19 @@
+uuid: a79aae37-28d8-44aa-abeb-125915ef1c1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_our_title
+    - node.type.our_client
+id: node.our_client.field_our_title
+field_name: field_our_title
+entity_type: node
+bundle: our_client
+label: 'our title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

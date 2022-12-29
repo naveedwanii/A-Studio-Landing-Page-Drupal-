@@ -1,0 +1,20 @@
+uuid: 651a4f31-f301-4437-9e5a-d7dc7e5fc895
+langcode: en
+status: true
+dependencies:
+  theme:
+    - myproject
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: myproject_page_title
+theme: myproject
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

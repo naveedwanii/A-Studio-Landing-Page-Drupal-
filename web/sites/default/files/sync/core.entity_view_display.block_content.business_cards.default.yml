@@ -1,0 +1,31 @@
+uuid: 7edeced8-0543-4087-89ab-903735ebead1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.business_cards
+    - field.field.block_content.business_cards.body
+    - field.field.block_content.business_cards.field_business_title
+  module:
+    - text
+id: block_content.business_cards.default
+targetEntityType: block_content
+bundle: business_cards
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_business_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

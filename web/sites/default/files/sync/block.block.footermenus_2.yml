@@ -1,0 +1,25 @@
+uuid: 5261ab30-edd9-44f9-be29-d3410d50722c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menus
+  module:
+    - system
+  theme:
+    - claro
+id: footermenus_2
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-menus'
+settings:
+  id: 'system_menu_block:footer-menus'
+  label: 'Footer Menus'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

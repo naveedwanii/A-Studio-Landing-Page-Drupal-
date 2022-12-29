@@ -1,0 +1,23 @@
+uuid: 21188e29-f999-4efa-95ce-67beddc1ae1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.subscibe_newsletter
+  module:
+    - text
+id: node.subscibe_newsletter.body
+field_name: body
+entity_type: node
+bundle: subscibe_newsletter
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

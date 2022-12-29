@@ -1,0 +1,23 @@
+uuid: ed9442a1-341a-4bed-b509-6502843b182a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.business
+  module:
+    - text
+id: node.business.body
+field_name: body
+entity_type: node
+bundle: business
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

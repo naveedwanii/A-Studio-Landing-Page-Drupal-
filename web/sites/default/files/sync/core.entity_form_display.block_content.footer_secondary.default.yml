@@ -1,0 +1,33 @@
+uuid: 44a09f6d-3f38-41bd-91eb-eec8f9577f74
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_secondary
+    - field.field.block_content.footer_secondary.body
+  module:
+    - text
+id: block_content.footer_secondary.default
+targetEntityType: block_content
+bundle: footer_secondary
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

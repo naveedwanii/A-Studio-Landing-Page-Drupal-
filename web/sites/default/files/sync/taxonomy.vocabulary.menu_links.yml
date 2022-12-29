@@ -1,0 +1,8 @@
+uuid: e4922f6c-0c0b-4b0a-b342-d87cce87c99b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Menu Links'
+vid: menu_links
+description: ''
+weight: 0

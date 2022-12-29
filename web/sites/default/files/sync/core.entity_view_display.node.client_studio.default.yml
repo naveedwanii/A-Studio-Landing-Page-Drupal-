@@ -1,0 +1,73 @@
+uuid: 980bd6db-54ca-4cd8-b6bb-86f621f5802e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.client_studio.body
+    - field.field.node.client_studio.field_button
+    - field.field.node.client_studio.field_paragraph_image
+    - field.field.node.client_studio.field_title
+    - field.field.node.client_studio.field_title_paragraph
+    - node.type.client_studio
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.client_studio.default
+targetEntityType: node
+bundle: client_studio
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_paragraph_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_title_paragraph:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

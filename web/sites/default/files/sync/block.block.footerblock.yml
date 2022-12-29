@@ -1,0 +1,25 @@
+uuid: 3a3fdce5-966f-4620-bf0a-a37d1bfa89ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:37286b87-ab59-4b03-9dba-bcef00efc044'
+  module:
+    - block_content
+  theme:
+    - claro
+id: footerblock
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:37286b87-ab59-4b03-9dba-bcef00efc044'
+settings:
+  id: 'block_content:37286b87-ab59-4b03-9dba-bcef00efc044'
+  label: 'Footer Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

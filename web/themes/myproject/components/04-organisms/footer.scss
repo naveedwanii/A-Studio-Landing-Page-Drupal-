@@ -13,7 +13,7 @@
     font-size: 14px;
     line-height: 28px;
     font-weight: 400;
-    color: #000;
+    color: $color-black;
     text-decoration: none;
   }
 }
@@ -26,7 +26,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
-    color: #000;
+    color: $color-black;
   }
 }
 // .footer__menu__logo-container {
@@ -58,7 +58,7 @@
   font-size: 14px;
   line-height: 22px;
   width: 270px;
-  color: #565656;
+  color: $color-grey;
 }
 
 .footer__container-sociallinks {

@@ -1,0 +1,25 @@
+uuid: 23eb497a-0681-4fd1-b6bd-4616ec952b29
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-menu
+  module:
+    - system
+  theme:
+    - myproject
+id: headermenu_2
+theme: myproject
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:header-menu'
+settings:
+  id: 'system_menu_block:header-menu'
+  label: 'Header Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

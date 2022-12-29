@@ -1,0 +1,19 @@
+uuid: 3ed55f8b-c3f5-4348-8c37-4c527fe49c3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_our_description
+    - node.type.our_client
+id: node.our_client.field_our_description
+field_name: field_our_description
+entity_type: node
+bundle: our_client
+label: 'our description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

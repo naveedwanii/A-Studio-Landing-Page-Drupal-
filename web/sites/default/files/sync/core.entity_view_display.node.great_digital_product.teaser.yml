@@ -1,0 +1,32 @@
+uuid: 8bd86a79-16cf-4dc1-addc-4bb1015ee7e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.great_digital_product.body
+    - field.field.node.great_digital_product.field_image
+    - node.type.great_digital_product
+  module:
+    - text
+    - user
+id: node.great_digital_product.teaser
+targetEntityType: node
+bundle: great_digital_product
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image: true

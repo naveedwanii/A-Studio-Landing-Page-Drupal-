@@ -1,0 +1,25 @@
+uuid: d5c03823-ab48-457e-b76d-4f0bbf27817e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7b2ede48-3e9a-4bb9-983b-c63ba66edabb'
+  module:
+    - block_content
+  theme:
+    - claro
+id: ourclient1
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7b2ede48-3e9a-4bb9-983b-c63ba66edabb'
+settings:
+  id: 'block_content:7b2ede48-3e9a-4bb9-983b-c63ba66edabb'
+  label: 'Our Client 1'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 6cf93e5c-1cf1-4b85-8b01-8f1c6529835e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.client_studio
+  module:
+    - text
+id: node.client_studio.body
+field_name: body
+entity_type: node
+bundle: client_studio
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

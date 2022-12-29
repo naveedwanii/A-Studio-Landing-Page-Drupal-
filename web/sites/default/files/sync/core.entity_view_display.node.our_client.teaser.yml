@@ -1,0 +1,36 @@
+uuid: df287fba-6137-46da-9e0a-1128eb8e2e44
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.our_client.body
+    - field.field.node.our_client.field_our_description
+    - field.field.node.our_client.field_our_images
+    - field.field.node.our_client.field_our_title
+    - node.type.our_client
+  module:
+    - text
+    - user
+id: node.our_client.teaser
+targetEntityType: node
+bundle: our_client
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_our_description: true
+  field_our_images: true
+  field_our_title: true

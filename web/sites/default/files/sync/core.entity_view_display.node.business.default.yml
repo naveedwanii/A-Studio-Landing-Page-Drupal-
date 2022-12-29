@@ -1,0 +1,39 @@
+uuid: 51790feb-9808-4581-8a8f-3188494bf94b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business.body
+    - field.field.node.business.field_image
+    - field.field.node.business.field_preview_image
+    - node.type.business
+  module:
+    - image
+    - text
+    - user
+id: node.business.default
+targetEntityType: node
+bundle: business
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_preview_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_image: true
+  links: true

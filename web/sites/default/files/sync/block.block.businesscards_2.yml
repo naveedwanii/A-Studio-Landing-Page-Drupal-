@@ -1,0 +1,25 @@
+uuid: 369968d3-84c0-4267-a979-ea2b90d643ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:business_cards:7bb8dd45-9b8f-45e2-ad1c-dd87a37d26e0'
+  module:
+    - block_content
+  theme:
+    - myproject
+id: businesscards_2
+theme: myproject
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7bb8dd45-9b8f-45e2-ad1c-dd87a37d26e0'
+settings:
+  id: 'block_content:7bb8dd45-9b8f-45e2-ad1c-dd87a37d26e0'
+  label: 'Business Cards'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

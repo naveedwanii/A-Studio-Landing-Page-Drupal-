@@ -1,0 +1,42 @@
+uuid: 8c8e4a9a-8cc4-4ee4-86ff-dd655698a971
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.business_cards
+    - field.field.block_content.business_cards.body
+    - field.field.block_content.business_cards.field_business_title
+  module:
+    - text
+id: block_content.business_cards.default
+targetEntityType: block_content
+bundle: business_cards
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_business_title:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

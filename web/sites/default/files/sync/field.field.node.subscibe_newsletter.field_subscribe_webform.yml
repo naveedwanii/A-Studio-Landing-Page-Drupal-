@@ -1,0 +1,32 @@
+uuid: a245b080-d01a-46c2-a960-9303f5be04ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subscribe_webform
+    - node.type.subscibe_newsletter
+    - webform.webform.webform
+  module:
+    - webform
+id: node.subscibe_newsletter.field_subscribe_webform
+field_name: field_subscribe_webform
+entity_type: node
+bundle: subscibe_newsletter
+label: 'subscribe webform'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: f1b700c7-71c0-4d4f-8bef-8ae365295528
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

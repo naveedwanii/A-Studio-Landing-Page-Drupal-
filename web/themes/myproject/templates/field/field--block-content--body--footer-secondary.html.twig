@@ -38,7 +38,7 @@
  * @ingroup themeable
  */
 #}
-{%
+{# {%
   set title_classes = [
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
@@ -53,7 +53,7 @@
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes }}>{{ item.content }}</div>
+      <div{{ attributes.addClass('fp') }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
@@ -70,3 +70,9 @@
     {% endif %}
   </div>
 {% endif %}
+ #}
+
+
+{% for item in items %}
+  <div{{ attributes.addClass('footer__secondary') }}>{{ item.content }}</div>
+{% endfor %}

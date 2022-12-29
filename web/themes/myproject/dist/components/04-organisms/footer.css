@@ -74,6 +74,48 @@
   color: #565656;
 }
 
+.footer__container-sociallinks a[href*=facebook] {
+  background-color: #3b5998;
+  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  margin-right: 16px;
+  content: url(".../../../../../images/facebook.png");
+}
+
+.footer__container-sociallinks a[href*=twitter] {
+  background-color: #55acee;
+  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  margin-right: 16px;
+  content: url(".../../../../../images/twitter.png");
+}
+
+.footer__container-sociallinks a[href*=linkedin] {
+  background-color: #007ab9;
+  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  margin-right: 16px;
+  content: url(".../../../../../images/linkedin.png");
+}
+
 .footer__container-sociallinks div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,5 +124,20 @@
 
 .footer__container-sociallinks a {
   text-decoration: none;
+}
+
+.footer__line {
+  border: 1px solid #f1f1f1;
+}
+
+.footer__secondary {
+  position: absolute;
+  left: 40rem;
+  top: 4rem;
+  font-family: "averto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a4a4a4;
 }
 /*# sourceMappingURL=../../maps/04-organisms/footer.css.map */

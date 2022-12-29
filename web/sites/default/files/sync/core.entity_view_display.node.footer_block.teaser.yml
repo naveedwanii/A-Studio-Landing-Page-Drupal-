@@ -1,0 +1,36 @@
+uuid: ce3f0322-706d-460d-97b8-531e59abcd67
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.footer_block.body
+    - field.field.node.footer_block.field_footer_description
+    - field.field.node.footer_block.field_footer_logo
+    - field.field.node.footer_block.field_footer_social_links
+    - node.type.footer_block
+  module:
+    - text
+    - user
+id: node.footer_block.teaser
+targetEntityType: node
+bundle: footer_block
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_footer_description: true
+  field_footer_logo: true
+  field_footer_social_links: true

@@ -1,0 +1,23 @@
+uuid: 5919c858-6d0a-4368-b061-9bca30f1c238
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.footer_secondary
+  module:
+    - text
+id: node.footer_secondary.body
+field_name: body
+entity_type: node
+bundle: footer_secondary
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

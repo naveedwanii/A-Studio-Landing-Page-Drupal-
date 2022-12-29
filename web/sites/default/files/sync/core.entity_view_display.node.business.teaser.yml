@@ -1,0 +1,41 @@
+uuid: 557baa2f-6cdf-4306-9a59-b0139e6d06ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.business.body
+    - field.field.node.business.field_image
+    - field.field.node.business.field_preview_image
+    - node.type.business
+  module:
+    - image
+    - text
+    - user
+id: node.business.teaser
+targetEntityType: node
+bundle: business
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_preview_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_image: true
+  links: true

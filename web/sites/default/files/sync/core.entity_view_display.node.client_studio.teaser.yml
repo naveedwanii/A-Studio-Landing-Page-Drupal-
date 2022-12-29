@@ -1,0 +1,38 @@
+uuid: b90f8a4f-7259-49fa-9f12-b8b5322103c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.client_studio.body
+    - field.field.node.client_studio.field_button
+    - field.field.node.client_studio.field_paragraph_image
+    - field.field.node.client_studio.field_title
+    - field.field.node.client_studio.field_title_paragraph
+    - node.type.client_studio
+  module:
+    - text
+    - user
+id: node.client_studio.teaser
+targetEntityType: node
+bundle: client_studio
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_button: true
+  field_paragraph_image: true
+  field_title: true
+  field_title_paragraph: true
