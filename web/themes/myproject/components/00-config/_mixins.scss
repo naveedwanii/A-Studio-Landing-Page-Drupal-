@@ -1,0 +1,92 @@
+@mixin d-flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin d-flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+@mixin text-grey {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #959595;
+}
+
+@mixin text-black {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+@mixin text-small {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #565656;
+}
+
+@mixin text {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #000000;
+}
+
+@mixin text-1 {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #565656;
+}
+
+@mixin text-2 {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-family: 18px;
+  line-height: 28px;
+  color: #757575;
+}
+
+@mixin heading-small {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+@mixin heading {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+@mixin heading-1 {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49.44px;
+  color: $color-black;
+}
+
+@mixin bg-icon {
+  background-repeat: no-repeat;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  // padding: 8px;
+  text-decoration: none;
+  margin-right: 16px;
+}

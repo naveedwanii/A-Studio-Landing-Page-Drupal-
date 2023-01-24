@@ -1,22 +1,20 @@
 @import '../config.all';
 
-.what-say__container {
+.astudio__oh {
+  margin-top: 117px;
   text-align: center;
-}
 
-.what-say__title {
-  font-family: $font-primary;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 49px;
-  color: $color-black;
-  margin: 0;
-}
+  h2 {
+    @include heading-1();
+    margin: 0;
+  }
 
-.what-say__body {
-  font-family: $font-primary;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: $color-grey-50;
+  p {
+    @include text-2();
+    margin: 17px 0 0 0;
+  }
+
+  @include breakpoint($mobile) {
+    margin: 50px 20px 0;
+  }
 }

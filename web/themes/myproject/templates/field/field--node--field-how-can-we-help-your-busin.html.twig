@@ -38,41 +38,18 @@
  * @ingroup themeable
  */
 #}
-{# {%
-  set title_classes = [
-    label_display == 'visually_hidden' ? 'visually-hidden',
-  ]
-%}
-
-{% if label_hidden %}
-  {% if multiple %}
-    <div{{ attributes.addClass('footer__secondary') }}>
+{{ attach_library('myproject/businesscards')}}
+<div class='astudio__business-container'>
+<div class='astudio__business-trImg'></div>
+ <div class='astudio__business-title'>
+  <h2>How can we help your Business ?</hs2>
+  <p>We build readymade websites, mobile applications, and elaborate online business services.</p>
+</div>
+<div class='astudio__business-dotImg'></div>
+<div class='astudio__business-cards'>
       {% for item in items %}
-        <div{{ item.attributes.addClass('footer__i') }}>{{ item.content }}</div>
+        <div{{ item.attributes }}>{{ item.content }}</div>
       {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass('fp') }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
-{% else %}
-  <div{{ attributes.addClass('foo') }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-    {% if multiple %}
-      <div>
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('foo1') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
-  </div>
-{% endif %}
- #}
 
-
-{% for item in items %}
-  <div{{ attributes.addClass('astudio__footer-secondary') }}>{{ item.content }}</div>
-{% endfor %}
+</div>
+</div>

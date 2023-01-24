@@ -28,9 +28,10 @@
  */
 #}
 
-<div{{ attributes.addClass('footer__container-block') }}>
-  <div class='footer__container-logoimg'>{{ content.field_footer_image }}</div>
-  <div class='footer__container-descrip'>{{ content.body}}</div>
-  <div class='footer__container-sociallinks'>{{ content.field_footer_media_links }}</div>
-  <hr class='footer__line'/>
+<div{{ attributes.addClass('astudio__footer-container-block') }}>
+  <hr class='footer__line-above'/>
+  <div class='astudio__footer-container-block-logoimg'>{{ content.field_footer_image }}</div>
+  <div class='astudio__footer-container-block-descrip'>{{ content.body}}</div>
+  <div class='astudio__footer-container-block-sociallinks'>{{ content.field_footer_media_links }}</div>
+  <hr class='footer__line-below'/>
 </div>

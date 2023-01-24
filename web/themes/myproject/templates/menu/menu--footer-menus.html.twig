@@ -33,12 +33,12 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('footer__container') }}>
+      <ul{{ attributes.addClass('astudio__footer-container') }}>
     {% else %}
-      <ul class='footer__container-ul'>
+      <ul class='astudio__footer-container-ul'>
     {% endif %}
     {% for item in items %}
-      <li{{ item.attributes.addClass('footer__container-li menu-level-' ~ menu_level) }} >
+      <li{{ item.attributes.addClass('astudio__footer-container-li menu-level-' ~ menu_level) }} >
         {{ link(item.title, item.url) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}

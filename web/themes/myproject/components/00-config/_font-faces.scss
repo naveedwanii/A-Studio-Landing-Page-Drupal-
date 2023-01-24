@@ -1,7 +1,14 @@
 $font-path: '/themes/myproject/fonts';
 
+// @font-face {
+//   font-family: 'averto';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url(#{$font-path}/averto/Averto.ttf);
+// }
+
 @font-face {
-  font-family: 'averto';
+  font-family: 'Averta Demo PE Cutted Demo';
   font-style: normal;
   font-weight: 400;
   src: url(#{$font-path}/averto/Averto.ttf);

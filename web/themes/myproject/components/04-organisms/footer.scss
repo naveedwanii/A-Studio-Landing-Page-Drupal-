@@ -1,146 +1,123 @@
 @import '../config.all';
 
-.footer__container {
-  display: flex;
-  justify-content: flex-end;
+.astudio__footer-container {
+  @include d-flex-end();
   align-items: center;
-}
-.footer__container-li {
-  list-style: none;
-  margin-right: 50px;
-  a {
-    font-family: $font-primary;
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: 400;
-    color: $color-black;
-    text-decoration: none;
+
+  &-li {
+    list-style: none;
+    margin-right: 50px;
+    a {
+      @include text();
+      text-decoration: none;
+    }
   }
-}
-.footer__container-ul {
-  padding: 0;
-}
-
-.footer__container .menu-level-0 {
-  > a {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: $color-black;
+  &-ul {
+    margin-top: 24px;
+    padding: 0;
   }
-}
-// .footer__menu__logo-container {
-//   position: absolute;
-//   left: 2rem;
-//   .footer__menu__logo-des {
-//     margin-right: 120px;
-//   }
-// }
-.footer__menu__logo-des p {
-  margin-right: 120px;
-}
-.footer__menu__logo-links {
-  display: flex;
-  a {
-    text-decoration: none;
+
+  .menu-level-0 {
+    > a {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      color: $color-black;
+    }
   }
-}
 
-.footer__container-block {
-  position: relative;
-  top: 16rem;
-  margin-left: 120px;
-}
-
-.footer__container-descrip {
-  font-family: $font-primary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  width: 270px;
-  color: $color-grey;
-}
-
-.footer__container-sociallinks {
-  a[href*='facebook'] {
-    background-color: #3b5998;
-    background-repeat: no-repeat;
+  @include breakpoint($mobile) {
     display: block;
-    width: 25px;
-    height: 20px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 8px;
-    text-decoration: none;
-    margin-right: 16px;
-    content: url('.../../../../../images/fb-new.png');
+    padding-left: 14px;
+    padding-top: 20px;
   }
+}
 
-  a[href*='twitter'] {
-    background-color: #55acee;
-    background-repeat: no-repeat;
-    display: block;
-    width: 25px;
-    height: 20px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 8px;
-    text-decoration: none;
-    margin-right: 16px;
-    content: url('.../../../../../images/tw-new.png');
+.astudio__footer-menu_container {
+  position: absolute;
+  left: 2rem;
+  &-des {
+    margin-right: 120px;
   }
-
-  a[href*='linkedin'] {
-    background-color: #007ab9;
-    background-repeat: no-repeat;
-    display: block;
-    width: 25px;
-    height: 20px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 8px;
-    text-decoration: none;
-    margin-right: 16px;
-    content: url('.../../../../../images/lk-new.png');
+  &-des p {
+    margin-right: 120px;
   }
-  // :before {
-  //   background: red;
-  //   background-repeat: no-repeat;
-  //   display: block;
-  //   width: 30px;
-  //   height: 30px;
-  //   border-radius: 50%;
-  //   text-align: center;
-  //   padding: 8px;
-  //   text-decoration: none;
-  //   content: url('.../../../../../images/facebook.png');
-  // }
-
-  div {
+  &-links {
     display: flex;
-    // background: url('.../../../../../images/Rectangle 31.png');
-  }
-  a {
-    text-decoration: none;
-    // text-indent: -9999px;
+    a {
+      text-decoration: none;
+    }
   }
 }
 
-.footer__links {
-  margin-top: 40px;
+.astudio__footer-container-block {
+  position: relative;
+  top: 15rem;
+  margin-left: 120px;
+  &-descrip {
+    @include text-small();
+    width: 270px;
+  }
+  &-sociallinks {
+    a[href*='facebook'] {
+      background-color: $color-blue-1;
+      @include bg-icon();
+      content: url('.../../../../../images/fb-new.png');
+    }
+
+    a[href*='twitter'] {
+      background-color: $color-blue-2;
+      @include bg-icon();
+      content: url('.../../../../../images/tw-new.png');
+    }
+    a[href*='linkedin'] {
+      background-color: $color-blue-3;
+      @include bg-icon();
+      content: url('.../../../../../images/lk-new.png');
+    }
+    div {
+      display: flex;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    .footer__links {
+      margin-top: 40px;
+    }
+  }
+
+  @include breakpoint($mobile) {
+    position: relative;
+    top: 0;
+    margin-left: 14px;
+  }
 }
+
 .footer__line {
-  border: 1px solid #f1f1f1;
-  margin-top: 38px;
-}
+  &-below {
+    border: 1px solid $color-white-1;
+    margin-top: 29px;
+    margin-right: 120px;
 
-.footer__secondary {
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+
+  &-above {
+    border: 1px solid $color-white-1;
+    margin-bottom: 60px;
+    margin-right: 120px;
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+}
+.astudio__footer-secondary {
   position: absolute;
   left: 40rem;
   top: 7rem;
-  font-family: $font-primary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #a4a4a4;
+  @include text-small();
 }

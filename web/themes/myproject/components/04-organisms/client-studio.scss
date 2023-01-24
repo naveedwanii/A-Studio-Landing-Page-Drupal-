@@ -1,0 +1,82 @@
+@import '../config.all';
+.astudio__cs {
+  @include d-flex();
+  justify-content: center;
+
+  &-img1 {
+    height: 129px;
+    width: 129px;
+    position: relative;
+    top: -12.2rem;
+    background: url('.../../../../../images/Ellipse 85.png');
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+
+  &-img2 {
+    height: 178px;
+    width: 178px;
+    position: absolute;
+    right: 8rem;
+    z-index: -5;
+    top: 28rem;
+    background: url('.../../../../../images/Rectangle 23.png');
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+
+  &-block1 {
+    margin-left: 120px;
+
+    h2 {
+      @include heading-1();
+      margin-bottom: 40px;
+    }
+    p {
+      @include text-1();
+      margin: 0 57px 33px 0;
+    }
+    button {
+      background-color: $color-blue;
+      border-radius: 60px;
+      padding: 20px 40px;
+      border: none;
+      a {
+        font-family: $font-primary;
+        color: $color-white;
+        text-decoration: none;
+      }
+    }
+    &-bgImg {
+      margin: -35px 0 0 -68px;
+      height: 154px;
+      width: 404px;
+      background: url('.../../../../../images/Dot Ornament.png');
+
+      @include breakpoint($mobile) {
+        display: none;
+      }
+    }
+    @include breakpoint($mobile) {
+      margin-left: 14px;
+    }
+  }
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
+  &-block2 {
+    &-img img {
+      @include breakpoint($mobile) {
+        height: 300px;
+        width: 362px;
+        // width: 100%;
+        margin: 12px 0 0 14px;
+        object-fit: contain;
+      }
+    }
+  }
+}

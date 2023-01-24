@@ -2,11 +2,20 @@ global:
   css:
     theme:
       dist/components/global.css: {}
+
   js:
     dist/components/main.js:
       attributes:
         type: module
 
+slick:
+  css:
+    theme:
+     '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css': { type: external }
+  js:
+     '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js': { type: external }
+  dependencies:
+    - core/jquery
 # averto:
 #   css:
 #     theme:
@@ -21,6 +30,10 @@ header:
   css:
     theme:
       dist/components/04-organisms/header.css: {}
+  js:
+    dist/components/molecules/slider.js: {}
+  dependencies:
+    - myproject/slick
 
 businesscards:
   css:
@@ -51,4 +64,14 @@ our-client:
   css:
     theme:
      dist/components/04-organisms/our-client.css: {}
+
+slider:
+  css:
+    theme:
+     dist/components/04-organisms/slider.css: {}
+
+client-studio:
+  css:
+    theme:
+     dist/components/04-organisms/client-studio.css: {}
 

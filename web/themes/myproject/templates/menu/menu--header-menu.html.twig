@@ -31,7 +31,7 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu__link') }}>
+      <ul{{ attributes.addClass('astudio__menu-link') }}>
     {% else %}
       <ul class="menu">
     {% endif %}
@@ -44,8 +44,8 @@
           item.in_active_trail ? 'menu-item--active-trail',
         ]
       %}
-      <li{{ item.attributes.addClass('menu__link-li') }}>
-        {{ link(item.title, item.url, item.attributes.addClass('menu__link-a')) }}
+      <li{{ item.attributes.addClass('astudio__menu-link-li') }}>
+        {{ link(item.title, item.url, item.attributes.addClass('astudio__menu-link-a')) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
