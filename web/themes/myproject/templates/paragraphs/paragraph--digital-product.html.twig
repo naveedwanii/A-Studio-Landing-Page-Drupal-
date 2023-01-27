@@ -38,20 +38,20 @@
  * @ingroup themeable
  */
 #}
+
 {{ attach_library('myproject/digitalproduct')}}
  <div class='roundImg'></div>
 <div class='astudio__dp'>
   <div class='astudio__dp-block1'>
-    <a href='https://mail.google.com'><div class='astudio__dp-block1-videoIcon'></div></a>
+    <a href='https://www.youtube.com/'><div class='astudio__dp-block1-videoIcon'></div></a>
     <div class='astudio__dp-block1-img'>{{ content.field_digital_product_image.0 }}</div>
   </div>
-
   <div class='astudio__dp-block2'>
    <div class='astudio__dp-block2-trimImg'></div>
-   {# <div class='astudio__dp-block2-trimImg'> #}
-    <h2 class='astudio__dp-block2-title'>{{ content.field_digital_product_title }}</h2>
-    <p class='astudio__dp-block2-body'>{{ content.field_digital_product_body.0 }}</p>
-   {# </div> #}
+   <div class='astudio__dp-block2-trimImg'>
+    <h2>{{ content.field_digital_product_title }}</h2>
+    <p>{{ content.field_digital_product_body.0 }}</p>
+   </div>
   </div>
 
 </div>

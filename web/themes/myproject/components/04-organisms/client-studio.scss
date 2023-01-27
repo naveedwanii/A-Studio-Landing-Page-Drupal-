@@ -1,82 +1,65 @@
 @import '../config.all';
+
 .astudio__cs {
-  @include d-flex();
-  justify-content: center;
-
-  &-img1 {
-    height: 129px;
-    width: 129px;
-    position: relative;
-    top: -12.2rem;
-    background: url('.../../../../../images/Ellipse 85.png');
-    @include breakpoint($mobile) {
-      display: none;
-    }
+  margin: 0 14px 0 14px;
+  @include breakpoint($tablet) {
+    display: flex;
+    align-items: center;
   }
-
-  &-img2 {
-    height: 178px;
-    width: 178px;
-    position: absolute;
-    right: 8rem;
-    z-index: -5;
-    top: 28rem;
-    background: url('.../../../../../images/Rectangle 23.png');
-    @include breakpoint($mobile) {
-      display: none;
+  @include breakpoint($desktop) {
+    @include d-flex;
+    justify-content: center;
+  }
+  @include breakpoint($desktop) {
+    &-img1 {
+      @include cs-trImg();
+    }
+    &-img2 {
+      @include cs-trImg2();
     }
   }
 
   &-block1 {
-    margin-left: 120px;
-
     h2 {
       @include heading-1();
-      margin-bottom: 40px;
+      @include breakpoint($tablet) {
+        margin-bottom: 30px;
+      }
+      @include breakpoint($desktop) {
+        margin-bottom: 40px;
+      }
     }
     p {
       @include text-1();
-      margin: 0 57px 33px 0;
     }
     button {
-      background-color: $color-blue;
-      border-radius: 60px;
-      padding: 20px 40px;
-      border: none;
-      a {
-        font-family: $font-primary;
-        color: $color-white;
-        text-decoration: none;
+      width: 100%;
+      @include button();
+      @include breakpoint($tablet) {
+        margin-top: 30px;
+      }
+      @include breakpoint($desktop) {
+        width: 215px;
+        margin-top: 33px;
       }
     }
-    &-bgImg {
-      margin: -35px 0 0 -68px;
-      height: 154px;
-      width: 404px;
-      background: url('.../../../../../images/Dot Ornament.png');
 
-      @include breakpoint($mobile) {
-        display: none;
-      }
+    @include breakpoint($tablet) {
+      margin-right: 30px;
     }
-    @include breakpoint($mobile) {
-      margin-left: 14px;
+    @include breakpoint($desktop) {
+      margin-left: 120px;
     }
-  }
-
-  @include breakpoint($mobile) {
-    flex-direction: column;
   }
 
   &-block2 {
-    &-img img {
-      @include breakpoint($mobile) {
-        height: 300px;
-        width: 362px;
-        // width: 100%;
-        margin: 12px 0 0 14px;
-        object-fit: contain;
-      }
+    @include breakpoint($tablet) {
+      display: flex;
+      flex-direction: column;
     }
+  }
+  @include breakpoint($tablet) {
+    display: flex;
+    flex-direction: column;
   }
 }
