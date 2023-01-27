@@ -13,8 +13,4 @@
     @include text-2();
     margin: 17px 0 0 0;
   }
-
-  @include breakpoint($mobile) {
-    margin: 50px 20px 0;
-  }
 }

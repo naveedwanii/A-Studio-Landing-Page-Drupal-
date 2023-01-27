@@ -17,12 +17,6 @@
       @include text-2();
       margin-bottom: 99px;
     }
-
-    @include breakpoint($mobile) {
-      text-align: center;
-      padding-left: 13px;
-      padding-right: 13px;
-    }
   }
 
   &-b2 {
@@ -50,9 +44,9 @@
         margin-top: 106px;
         box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
 
-        @include breakpoint($mobile) {
-          width: 60%;
-        }
+        // @include breakpoint($mobile) {
+        //   width: 60%;
+        // }
       }
       ::-webkit-input-placeholder {
         @include text-grey();
@@ -73,12 +67,6 @@
         font-family: $font-primary;
       }
     }
-  }
-
-  @include breakpoint($mobile) {
-    flex-direction: column;
-    margin-left: 30px;
-    margin-right: 2px;
   }
 }
 

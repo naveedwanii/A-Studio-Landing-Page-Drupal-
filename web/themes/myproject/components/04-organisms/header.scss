@@ -1,30 +1,34 @@
 @import '../config.all';
 
 .astudio__site-logo {
-  position: absolute;
-  left: 7.1rem;
-
-  @include breakpoint($mobile) {
-    display: none;
+  // display: none;
+  @include breakpoint($desktop) {
+    position: absolute;
+    left: 7.1rem;
   }
 }
 
 .astudio__menu-link {
-  @include d-flex-end();
   @include list-clear();
-  margin-top: 26px;
-
-  &-li {
-    margin-right: 20px;
-  }
-
   &-a {
     @include text-black();
     letter-spacing: 0.1em;
     @include link-clear();
   }
 
-  @include breakpoint($mobile) {
-    flex-direction: column;
+  @include breakpoint($desktop) {
+    @include d-flex-end();
+    @include list-clear();
+    margin-top: 26px;
+
+    &-li {
+      margin-right: 20px;
+    }
+
+    &-a {
+      @include text-black();
+      letter-spacing: 0.1em;
+      @include link-clear();
+    }
   }
 }

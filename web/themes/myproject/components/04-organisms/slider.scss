@@ -1,9 +1,4 @@
 @import '../config.all';
-
-.astudio__slick-slider-container {
-  display: flex;
-}
-
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -23,19 +18,9 @@
     }
   }
 }
-.astudio__slick-slider {
-  display: flex;
-  align-items: center;
-  margin-left: 119px;
 
-  &-proundImg {
-    height: 120px;
-    width: 120px;
-    position: absolute;
-    z-index: -5;
-    top: 20rem;
-    background-image: url('.../../../../../images/Ellipse 94.png');
-  }
+.astudio__slick-slider {
+  display: block;
   &-b1 img {
     height: 389px;
     width: 389px;
@@ -53,7 +38,12 @@
     &-dotImg {
       background-image: url('.../../../../../images/Dot.png');
     }
+
+    @include breakpoint($tablet) {
+      margin-left: 14px;
+    }
   }
+
   &-roundImg {
     height: 184px;
     width: 184px;
@@ -102,5 +92,15 @@
     &-bl8 {
       transform: rotate(116deg) translate(-19em) rotate(-120deg);
     }
+  }
+
+  @include breakpoint($tablet) {
+    display: block;
+  }
+
+  @include breakpoint($desktop) {
+    display: flex;
+    align-items: center;
+    margin-left: 119px;
   }
 }

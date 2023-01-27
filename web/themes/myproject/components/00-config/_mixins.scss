@@ -12,7 +12,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #959595;
+  color: $color-grey-2;
 }
 
 @mixin text-black {
@@ -20,7 +20,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: $color-black;
 }
 
 @mixin text-small {
@@ -28,7 +28,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #565656;
+  color: $color-grey;
 }
 
 @mixin text {
@@ -36,15 +36,15 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-  color: #000000;
+  color: $color-black;
 }
 
 @mixin text-1 {
   font-family: $font-primary;
-  font-weight: 400;
+  // font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-  color: #565656;
+  color: $color-grey;
 }
 
 @mixin text-2 {
@@ -52,7 +52,7 @@
   font-weight: 400;
   font-family: 18px;
   line-height: 28px;
-  color: #757575;
+  color: $color-grey-50;
 }
 
 @mixin heading-small {
@@ -65,15 +65,15 @@
 
 @mixin heading {
   font-family: $font-primary;
-  font-weight: 400;
+  // font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #000000;
+  color: $color-black;
 }
 
 @mixin heading-1 {
   font-family: $font-primary;
-  font-weight: 400;
+  // font-weight: 400;
   font-size: 40px;
   line-height: 49.44px;
   color: $color-black;
@@ -89,4 +89,102 @@
   // padding: 8px;
   text-decoration: none;
   margin-right: 16px;
+}
+
+@mixin button {
+  margin-bottom: 30px;
+  background-color: $color-blue;
+  border-radius: 60px;
+  padding: 20px 40px;
+  border: none;
+  a {
+    font-family: $font-primary;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+@mixin cs-trImg {
+  height: 129px;
+  width: 129px;
+  position: relative;
+  top: -12.2rem;
+  background: url('.../../../../../images/Ellipse 85.png');
+}
+
+@mixin cs-trImg2 {
+  height: 178px;
+  width: 178px;
+  position: absolute;
+  right: 8rem;
+  z-index: -5;
+  top: 28rem;
+  background: url('.../../../../../images/Rectangle 23.png');
+}
+
+@mixin business-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-white;
+  box-shadow: 0px 2px 4px $color-grey-1;
+  border-radius: 40px;
+  padding: 0 32px 57px;
+  box-sizing: border-box;
+  margin: 0 34px 30px 0;
+}
+
+@mixin business-card-trImg {
+  height: 178px;
+  width: 178px;
+  z-index: -5;
+  position: absolute;
+  margin-left: 82px;
+  margin-bottom: 110px;
+  background-image: url('.../../../../../images/Rectangle 25.png');
+}
+
+@mixin business-card-dotImg {
+  width: 405px;
+  height: 154px;
+  z-index: -5;
+  position: absolute;
+  top: 93rem;
+  margin-left: 125px;
+  background-image: url('.../../../../../images/Group 70.png');
+}
+
+@mixin bg-square-card {
+  height: 121px;
+  width: 121px;
+  background-image: url('.../../../../../images/Rectangle 28.png');
+}
+
+@mixin digital-product-trimImg {
+  position: absolute;
+  left: 43rem;
+  width: 178px;
+  height: 178px;
+  z-index: -5;
+  background-image: url('.../../../../../images/Rectangle 26.png');
+  margin-top: 12px;
+}
+
+@mixin dp-videoIcon {
+  background-image: url('.../../../../../images/Group 7.png');
+  position: relative;
+  width: 78px;
+  height: 78px;
+  left: 14rem;
+  top: 13rem;
+}
+
+@mixin dp-roundImg {
+  height: 129px;
+  width: 129px;
+  position: relative;
+  top: 28rem;
+  left: 34rem;
+  z-index: -5;
+  background: url('.../../../../../images/Ellipse 86.png');
 }
