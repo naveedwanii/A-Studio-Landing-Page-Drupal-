@@ -1,0 +1,31 @@
+uuid: cc3dfa4a-caae-464d-b8dc-36b39e21e562
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_happy_client.field_our_happy_body
+    - field.field.paragraph.our_happy_client.field_our_happy_title
+    - paragraphs.paragraphs_type.our_happy_client
+  module:
+    - text
+id: paragraph.our_happy_client.default
+targetEntityType: paragraph
+bundle: our_happy_client
+mode: default
+content:
+  field_our_happy_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_our_happy_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

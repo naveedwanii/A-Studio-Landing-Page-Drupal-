@@ -1,0 +1,10 @@
+uuid: 4cd8191a-5d66-4633-8400-91b2562c7609
+langcode: en
+status: true
+dependencies: {  }
+id: info_cards
+label: 'Info Cards'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

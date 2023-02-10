@@ -1,0 +1,49 @@
+uuid: e761dd3e-a88a-4285-b44c-23139fc46293
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards
+    - paragraphs.paragraphs_type.how_can_we_help_your_bussiness_
+    - paragraphs.paragraphs_type.info_cards
+  module:
+    - entity_reference_revisions
+id: paragraph.info_cards.field_cards
+field_name: field_cards
+entity_type: paragraph
+bundle: info_cards
+label: Cards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      how_can_we_help_your_bussiness_: how_can_we_help_your_bussiness_
+    negate: 0
+    target_bundles_drag_drop:
+      client_studio:
+        weight: 9
+        enabled: false
+      digital_product:
+        weight: 10
+        enabled: false
+      how_can_we_help_your_bussiness_:
+        weight: 11
+        enabled: true
+      info_cards:
+        weight: 8
+        enabled: false
+      our_client:
+        weight: 12
+        enabled: false
+      our_happy_client:
+        weight: 13
+        enabled: false
+      subscribe_newsletter:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

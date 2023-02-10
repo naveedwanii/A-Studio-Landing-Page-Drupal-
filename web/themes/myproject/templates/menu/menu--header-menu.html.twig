@@ -19,6 +19,7 @@
  */
 #}
 {{ attach_library('myproject/header')}}
+{{ attach_library('myproject/hamburger')}}
 {% import _self as menus %}
 
 {#
@@ -30,27 +31,30 @@
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
   {% if items %}
-    {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('astudio__menu-link') }}>
-    {% else %}
-      <ul class="menu">
-    {% endif %}
-    {% for item in items %}
-      {%
-        set classes = [
-          'menu-item',
-          item.is_expanded ? 'menu-item--expanded',
-          item.is_collapsed ? 'menu-item--collapsed',
-          item.in_active_trail ? 'menu-item--active-trail',
-        ]
-      %}
-      <li{{ item.attributes.addClass('astudio__menu-link-li') }}>
-        {{ link(item.title, item.url, item.attributes.addClass('astudio__menu-link-a')) }}
-        {% if item.below %}
-          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-        {% endif %}
-      </li>
-    {% endfor %}
-    </ul>
-  {% endif %}
+  <div class='header-container in-active'>
+            {% if menu_level == 0 %}
+              <ul{{ attributes.addClass('astudio__menu-link') }}>
+            {% else %}
+              <ul class="menu">
+            {% endif %}
+            {% for item in items %}
+              {%
+                set classes = [
+                  'menu-item',
+                  item.is_expanded ? 'menu-item--expanded',
+                  item.is_collapsed ? 'menu-item--collapsed',
+                  item.in_active_trail ? 'menu-item--active-trail',
+                ]
+              %}
+              <li{{ item.attributes.addClass('astudio__menu-link-li') }}>
+                {{ link(item.title, item.url, item.attributes.addClass('astudio__menu-link-a')) }}
+                {% if item.below %}
+                  {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                {% endif %}
+              </li>
+            {% endfor %}
+            </ul>
+</div>
+
+          {% endif %}
 {% endmacro %}

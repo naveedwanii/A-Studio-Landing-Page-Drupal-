@@ -42,11 +42,13 @@
 {{ attach_library('myproject/slider') }}
 <div class='astudio__slick-slider'>
   <div class='astudio__slick-slider-proundImg'></div>
-  <div class='astudio__slick-slider-b1'>{{ content.field_slider_image.0 }}</div>
-  <div class='astudio__slick-slider-b2'>
-    <div class='astudio__slick-slider-b2-roundImg'></div>
-    <h2>{{ content.field_slider_title.0 }}</h2>
-    <p>{{ content.field_slider_body.0 }}</p>
+      <div class='astudio__slick-slider-wrapper'>
+      <div class='astudio__slick-slider-wrapper-b1'>{{ content.field_slider_image.0 }}</div>
+      <div class='astudio__slick-slider-wrapper-b2'>
+        <div class='astudio__slick-slider-b2-roundImg'></div>
+        <h2>{{ content.field_slider_title.0 }}</h2>
+        <p>{{ content.field_slider_body.0 }}</p>
+      </div>
   </div>
   <div class='astudio__slick-slider-b3'>{{ content.field_slider_rounded_images }}</div>
   <div class='astudio__slick-slider-roundImg'></div>

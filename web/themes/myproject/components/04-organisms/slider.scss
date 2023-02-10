@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: -13rem;
+  top: -21rem;
   li {
     height: 16px;
     width: 16px;
@@ -17,90 +17,140 @@
       display: none;
     }
   }
-}
 
-.astudio__slick-slider {
-  display: block;
-  &-b1 img {
-    height: 389px;
-    width: 389px;
+  @include breakpoint($tablet) {
+    top: -3rem;
   }
 
-  &-b2 {
-    width: 412px;
-    margin-right: 38px;
-    h2 {
-      @include heading();
+  @include breakpoint($desktop) {
+    top: -13rem;
+  }
+}
+
+.astudio__slick-slider-container {
+  margin-top: 50px;
+  .astudio__slick-slider {
+    display: block;
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 14px;
+      &-b1 img {
+        height: 389px;
+        width: 389px;
+      }
+      &-b2 {
+        max-width: 412px;
+        margin-right: 38px;
+        h2 {
+          @include heading();
+        }
+        p {
+          @include text-1();
+        }
+        &-dotImg {
+          background-image: url('.../../../../../images/Dot.png');
+        }
+      }
+
+      @include breakpoint($tablet) {
+        flex-direction: row;
+      }
+
+      @include breakpoint($desktop) {
+        flex-direction: row;
+        margin-left: 0;
+      }
     }
-    p {
-      @include text-1();
+
+    &-b3 {
+      @include breakpoint($tablet) {
+        display: none;
+      }
     }
-    &-dotImg {
-      background-image: url('.../../../../../images/Dot.png');
+
+    &-roundImg {
+      height: 184px;
+      width: 184px;
+      position: relative;
+      top: -25rem;
+      z-index: -5;
+      right: -3rem;
+      background-image: url('.../../../../../images/Ellipse 93.png');
+
+      @include breakpoint($tablet) {
+        display: none;
+      }
+
+      @include breakpoint($desktop) {
+        top: 0;
+        right: 5rem;
+      }
+    }
+    &_roundImgs {
+      position: relative;
+      top: -5rem;
+      border-radius: 50%;
+
+      a {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4em;
+        height: 4em;
+        margin: -2em;
+      }
+      &-bl1 {
+        transform: rotate(261deg) translate(-8em) rotate(96deg);
+        top: 50px;
+        position: relative;
+      }
+      &-bl2 {
+        transform: rotate(80deg) translate(14em) rotate(-81deg);
+      }
+      &-bl3 {
+        transform: rotate(63deg) translate(15em) rotate(-64deg);
+      }
+      &-bl4 {
+        transform: rotate(199deg) translate(-16.8em) rotate(-205deg);
+      }
+      &-bl5 {
+        transform: rotate(-12deg) translate(19em) rotate(14deg);
+      }
+      &-bl6 {
+        transform: rotate(322deg) translate(21em) rotate(-325deg);
+      }
+      &-bl7 {
+        transform: rotate(116deg) translate(-22em) rotate(-118deg);
+      }
+      &-bl8 {
+        transform: rotate(116deg) translate(-19em) rotate(-120deg);
+      }
+
+      @include breakpoint($desktop) {
+        top: 0;
+      }
     }
 
     @include breakpoint($tablet) {
-      margin-left: 14px;
+      margin-top: 80px;
     }
-  }
 
-  &-roundImg {
-    height: 184px;
-    width: 184px;
-    position: relative;
-    top: 0;
-    z-index: -5;
-    right: 5rem;
-    background-image: url('.../../../../../images/Ellipse 93.png');
-  }
-  &_roundImgs {
-    position: relative;
-    border-radius: 50%;
-
-    a {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 4em;
-      height: 4em;
-      margin: -2em;
-    }
-    &-bl1 {
-      transform: rotate(261deg) translate(-8em) rotate(96deg);
-      top: 50px;
-      position: relative;
-    }
-    &-bl2 {
-      transform: rotate(80deg) translate(14em) rotate(-81deg);
-    }
-    &-bl3 {
-      transform: rotate(63deg) translate(15em) rotate(-64deg);
-    }
-    &-bl4 {
-      transform: rotate(199deg) translate(-16.8em) rotate(-205deg);
-    }
-    &-bl5 {
-      transform: rotate(-12deg) translate(19em) rotate(14deg);
-    }
-    &-bl6 {
-      transform: rotate(322deg) translate(21em) rotate(-325deg);
-    }
-    &-bl7 {
-      transform: rotate(116deg) translate(-22em) rotate(-118deg);
-    }
-    &-bl8 {
-      transform: rotate(116deg) translate(-19em) rotate(-120deg);
+    @include breakpoint($desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
   @include breakpoint($tablet) {
-    display: block;
+    margin-top: 0;
   }
 
   @include breakpoint($desktop) {
-    display: flex;
-    align-items: center;
-    margin-left: 119px;
+    margin-top: 0;
   }
 }

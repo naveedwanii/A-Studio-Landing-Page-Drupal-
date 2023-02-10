@@ -1,0 +1,19 @@
+uuid: ae54afdb-0b8d-414d-97f3-24c9e148a280
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_digital_product_title
+    - paragraphs.paragraphs_type.digital_product
+id: paragraph.digital_product.field_digital_product_title
+field_name: field_digital_product_title
+entity_type: paragraph
+bundle: digital_product
+label: 'Digital Product Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

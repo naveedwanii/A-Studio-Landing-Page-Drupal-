@@ -1,0 +1,55 @@
+uuid: ca17fb1c-491a-4afc-a18c-a50709c2d2a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.client_studio.field_cs_body
+    - field.field.paragraph.client_studio.field_cs_image
+    - field.field.paragraph.client_studio.field_cs_link
+    - field.field.paragraph.client_studio.field_cs_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.client_studio
+  module:
+    - image
+    - link
+    - text
+id: paragraph.client_studio.default
+targetEntityType: paragraph
+bundle: client_studio
+mode: default
+content:
+  field_cs_body:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cs_image:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_cs_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_cs_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

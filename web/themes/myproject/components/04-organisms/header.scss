@@ -1,34 +1,111 @@
 @import '../config.all';
 
-.astudio__site-logo {
-  // display: none;
-  @include breakpoint($desktop) {
+.astudio__header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  width: 100%;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 20%);
+  position: fixed;
+  background: $color-white;
+  top: 0px;
+  z-index: 501;
+  .astudio__site-logo {
+    @include breakpoint($desktop) {
+      position: absolute;
+      left: 6.6rem;
+    }
+  }
+
+  .astudio__menu-link {
+    display: none;
     position: absolute;
-    left: 7.1rem;
-  }
-}
+    top: 1.4rem;
+    left: -0.9rem;
+    height: 100vh;
+    width: 100vw;
+    background: $color-white;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 12%);
+    z-index: 501;
 
-.astudio__menu-link {
-  @include list-clear();
-  &-a {
-    @include text-black();
-    letter-spacing: 0.1em;
-    @include link-clear();
-  }
-
-  @include breakpoint($desktop) {
-    @include d-flex-end();
     @include list-clear();
-    margin-top: 26px;
 
     &-li {
-      margin-right: 20px;
+      margin-bottom: 20px;
     }
-
     &-a {
       @include text-black();
       letter-spacing: 0.1em;
       @include link-clear();
+    }
+
+    @include breakpoint($desktop) {
+      @include d-flex-end();
+      @include list-clear();
+      margin-top: 26px;
+
+      &-li {
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+
+      &-a {
+        @include text-black();
+        letter-spacing: 0.1em;
+        @include link-clear();
+      }
+    }
+
+    @include breakpoint($tablet) {
+      display: none;
+      position: absolute;
+      left: 23rem;
+      top: 20px;
+      width: 60vw;
+      height: 90vh;
+      background: $color-white;
+      box-shadow: 4px 4px 20px rgb(0 0 0 / 12%);
+      z-index: 9;
+      padding: 50px;
+      &-li {
+        margin-bottom: 30px;
+      }
+      &-a {
+        @include heading-small();
+        color: $color-black;
+      }
+    }
+    @include breakpoint($desktop) {
+      position: static;
+      display: flex;
+      height: 0;
+      width: 100%;
+    }
+  }
+
+  @include breakpoint($tablet) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 15px 14px;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 20%);
+    position: fixed;
+    background: $color-white;
+    top: 40px;
+    z-index: 501;
+  }
+  @include breakpoint($desktop) {
+    display: block;
+    box-shadow: none;
+    position: unset;
+  }
+
+  .hamburger {
+    @include hamburger-menu();
+
+    @include breakpoint($desktop) {
+      display: none;
     }
   }
 }
