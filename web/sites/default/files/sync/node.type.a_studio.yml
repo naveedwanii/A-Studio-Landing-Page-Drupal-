@@ -1,0 +1,18 @@
+uuid: 414179a4-089c-489c-ad82-4b76592264fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'A Studio'
+type: a_studio
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

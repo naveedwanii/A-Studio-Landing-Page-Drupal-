@@ -1,0 +1,21 @@
+uuid: 2607454e-ae57-4506-bd8f-e642ea4af6e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cs_body
+    - paragraphs.paragraphs_type.client_studio
+  module:
+    - text
+id: paragraph.client_studio.field_cs_body
+field_name: field_cs_body
+entity_type: paragraph
+bundle: client_studio
+label: 'cs body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

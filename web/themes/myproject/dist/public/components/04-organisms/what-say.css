@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "averto";
+  font-family: "Averta Demo PE Cutted Demo";
 
   font-style: normal;
 
@@ -8,24 +8,25 @@
   src: url(/themes/myproject/fonts/averto/Averto.ttf);
 }
 
-.what-say__container {
+.astudio__oh {
+  margin-top: 117px;
   text-align: center;
 }
 
-.what-say__title {
-  font-family: "averto", sans-serif;
-  font-weight: 400;
+.astudio__oh h2 {
+  font-family: "Averta Demo PE Cutted Demo";
   font-size: 40px;
-  line-height: 49px;
-  color: #000;
+  line-height: 49.44px;
+  color: #000000;
   margin: 0;
 }
 
-.what-say__body {
-  font-family: "averto", sans-serif;
+.astudio__oh p {
+  font-family: "Averta Demo PE Cutted Demo";
   font-weight: 400;
-  font-size: 18px;
+  font-family: 18px;
   line-height: 28px;
   color: #757575;
+  margin: 17px 0 0 0;
 }
 /*# sourceMappingURL=../../maps/04-organisms/what-say.css.map */

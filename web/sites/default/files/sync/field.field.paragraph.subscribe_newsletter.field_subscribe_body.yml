@@ -1,0 +1,21 @@
+uuid: eb67fe74-04c1-4fe2-a0ab-dd4a1630520d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subscribe_body
+    - paragraphs.paragraphs_type.subscribe_newsletter
+  module:
+    - text
+id: paragraph.subscribe_newsletter.field_subscribe_body
+field_name: field_subscribe_body
+entity_type: paragraph
+bundle: subscribe_newsletter
+label: 'subscribe body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,55 @@
+uuid: aa8223d6-b53d-413d-a499-5122ef2ca340
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.subscribe_newsletter.field_subscribe_body
+    - field.field.paragraph.subscribe_newsletter.field_subscribe_button
+    - field.field.paragraph.subscribe_newsletter.field_subscribe_form
+    - field.field.paragraph.subscribe_newsletter.field_subscribe_title
+    - paragraphs.paragraphs_type.subscribe_newsletter
+  module:
+    - link
+    - text
+    - webform
+id: paragraph.subscribe_newsletter.default
+targetEntityType: paragraph
+bundle: subscribe_newsletter
+mode: default
+content:
+  field_subscribe_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subscribe_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subscribe_form:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_subscribe_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

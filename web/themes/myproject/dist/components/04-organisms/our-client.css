@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "averto";
+  font-family: "Averta Demo PE Cutted Demo";
 
   font-style: normal;
 
@@ -8,46 +8,86 @@
   src: url(/themes/myproject/fonts/averto/Averto.ttf);
 }
 
-.ourclient__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 120px 0 120px;
+.astudio__oc {
+  margin: 60px 14px 0;
 }
 
-.ourclient__title {
-  font-family: "averto", sans-serif;
+.astudio__oc-block1 h2 {
+  font-family: "Averta Demo PE Cutted Demo";
   font-size: 40px;
-  font-weight: 400;
-  line-height: 49px;
-  color: #000;
-  margin: 0;
+  line-height: 49.44px;
+  color: #000000;
 }
 
-.ourclient__descrip {
-  font-family: "averto", sans-serif;
-  font-size: 18px;
+.astudio__oc-block1 p {
+  font-family: "Averta Demo PE Cutted Demo";
   font-weight: 400;
+  font-family: 18px;
   line-height: 28px;
   color: #757575;
-  margin-top: 17px;
 }
 
-.ourclient-images {
+@media (min-width: 1025px) {
+  .astudio__oc-block1 p {
+    margin-right: 60px;
+  }
+}
+
+.astudio__oc-block2 .ourclient-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 49px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.ourclient-img {
-  margin-left: 37px;
-  margin-right: 30px;
+.astudio__oc-block2 .ourclient-images .ourclient-img {
+  margin-right: 20px;
+}
+
+@media (min-width: 1025px) {
+  .astudio__oc-block2 .ourclient-images .ourclient-img {
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__oc-block2 .ourclient-images {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: self-end;
+        -ms-flex-align: self-end;
+            align-items: self-end;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__oc-block2 .ourclient-images {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__oc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__oc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 136px 120px 0 120px;
+  }
 }
 /*# sourceMappingURL=../../maps/04-organisms/our-client.css.map */

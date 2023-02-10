@@ -1,0 +1,26 @@
+uuid: 26df1ed3-ba09-46b7-90a5-3fa6dc8cb86a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.a_studio.field_client_studio
+    - field.field.node.a_studio.field_how_can_we_help_your_bussi
+    - field.field.node.a_studio.field_our_client
+    - node.type.a_studio
+  module:
+    - user
+id: node.a_studio.teaser
+targetEntityType: node
+bundle: a_studio
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_client_studio: true
+  field_how_can_we_help_your_bussi: true
+  field_our_client: true

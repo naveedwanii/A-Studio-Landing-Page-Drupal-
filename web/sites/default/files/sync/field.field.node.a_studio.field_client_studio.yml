@@ -1,0 +1,31 @@
+uuid: 85b212f8-0a1d-4c57-b06c-2299e7f22762
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_studio
+    - node.type.a_studio
+    - paragraphs.paragraphs_type.client_studio
+  module:
+    - entity_reference_revisions
+id: node.a_studio.field_client_studio
+field_name: field_client_studio
+entity_type: node
+bundle: a_studio
+label: 'Client Studio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      client_studio: client_studio
+    negate: 0
+    target_bundles_drag_drop:
+      client_studio:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

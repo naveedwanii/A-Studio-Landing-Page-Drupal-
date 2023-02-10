@@ -1,70 +1,83 @@
 @import '../config.all';
 
 .astudio__dp {
-  @include d-flex();
-  justify-content: center;
-  margin: 0 120px 0 120px;
-
-  &-roundImg {
-    background-image: url('.../../../../../images/Ellipse 86.png');
+  display: block;
+  h2 {
+    @include heading-1();
   }
+  p {
+    @include text-1();
+  }
+  @include breakpoint($tablet) {
+    display: block;
+    // display: flex;
+    // align-items: center;
+    margin: 60px 0 0 0;
+    h2 {
+      width: 473px;
+    }
+  }
+  @include breakpoint($desktop) {
+    @include d-flex();
+    margin-left: 120px;
+    // margin-top: 110px;
+    justify-content: center;
+    h2 {
+      margin: 24px 183px 30px 0;
+    }
+    p {
+      margin-right: 120px;
+    }
+  }
+
   &-block1 {
-    &-videoIcon {
-      background-image: url('.../../../../../images/Group 7.png');
-      position: relative;
-      width: 78px;
-      height: 78px;
-      left: 14rem;
-      top: 13rem;
-    }
     &-img img {
-      width: 550px;
-      height: 372px;
-    }
-  }
-  &-block2 {
-    margin-left: 70px;
-    &-trimImg {
-      position: absolute;
-      left: 44rem;
-      width: 178px;
-      height: 178px;
-      background-image: url('.../../../../../images/Rectangle 26.png');
-      margin-top: 12px;
-    }
-    &-title {
-      position: relative;
-      @include heading-1();
-      margin-right: 163px;
-      margin-bottom: 30px;
-
-      @include breakpoint($mobile) {
-        margin-right: 0;
-        margin-top: 0;
+      width: 401px;
+      @include breakpoint($tablet) {
+        width: 100%;
+        margin-left: -30px;
       }
     }
-    &-body {
-      @include text-1();
-      position: relative;
-      margin: 0;
+
+    &-videoIcon {
+      @include dp-videoIcon();
+
+      @include breakpoint($tablet) {
+        @include dp-videoIcon();
+        left: 18rem;
+        top: 16rem;
+      }
     }
 
-    @include breakpoint($mobile) {
-      margin-left: 0;
+    @include breakpoint($desktop) {
+      &-img img {
+        width: 550px;
+        height: 372px;
+      }
     }
   }
-  @include breakpoint($mobile) {
-    flex-direction: column;
-    margin: 0 0 0 14px;
+
+  &-block2 {
+    @include breakpoint($tablet) {
+      margin-left: 14px;
+      margin-right: 14px;
+    }
+    @include breakpoint($desktop) {
+      margin-left: 60px;
+      // &-trimImg {
+      //   @include digital-product-trimImg();
+      // }
+    }
   }
 }
 
 .roundImg {
-  height: 129px;
-  width: 129px;
-  position: relative;
-  top: 29rem;
-  left: 34rem;
-  z-index: -5;
-  background: url('.../../../../../images/Ellipse 86.png');
+  @include dp-roundImg();
+
+  @include breakpoint($tablet) {
+    // @include dp-roundImg();
+    // top: 37rem;
+    // left: 36rem;
+    display: none;
+  }
 }

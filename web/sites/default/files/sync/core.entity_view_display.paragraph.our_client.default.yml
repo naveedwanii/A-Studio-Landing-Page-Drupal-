@@ -1,0 +1,44 @@
+uuid: 20458372-573a-4df6-af98-b4eccd7f594d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_client.field_oc_body
+    - field.field.paragraph.our_client.field_oc_image
+    - field.field.paragraph.our_client.field_oc_title
+    - paragraphs.paragraphs_type.our_client
+  module:
+    - image
+    - text
+id: paragraph.our_client.default
+targetEntityType: paragraph
+bundle: our_client
+mode: default
+content:
+  field_oc_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_oc_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_oc_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
