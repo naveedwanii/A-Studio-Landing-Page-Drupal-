@@ -1,0 +1,21 @@
+uuid: 69ebe9f0-9dc2-48df-98eb-5408b2d3b427
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oc_body
+    - paragraphs.paragraphs_type.our_client
+  module:
+    - text
+id: paragraph.our_client.field_oc_body
+field_name: field_oc_body
+entity_type: paragraph
+bundle: our_client
+label: 'oc body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: 43e25d45-351d-4661-a4f6-5c6a30f0d4f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_how_can_we_help_your_bussi
+field_name: field_how_can_we_help_your_bussi
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

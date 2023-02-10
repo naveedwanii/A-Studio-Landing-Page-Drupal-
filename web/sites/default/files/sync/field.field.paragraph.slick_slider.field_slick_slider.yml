@@ -1,0 +1,55 @@
+uuid: 1edf3b34-57f2-402f-9e3c-107f65700191
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slick_slider
+    - paragraphs.paragraphs_type.slick_slider
+    - paragraphs.paragraphs_type.slider
+  module:
+    - entity_reference_revisions
+id: paragraph.slick_slider.field_slick_slider
+field_name: field_slick_slider
+entity_type: paragraph
+bundle: slick_slider
+label: 'Slick Slider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slider: slider
+    negate: 0
+    target_bundles_drag_drop:
+      client_studio:
+        weight: 11
+        enabled: false
+      digital_product:
+        weight: 12
+        enabled: false
+      how_can_we_help_your_bussiness_:
+        weight: 13
+        enabled: false
+      info_cards:
+        weight: 14
+        enabled: false
+      our_client:
+        weight: 15
+        enabled: false
+      our_happy_client:
+        weight: 16
+        enabled: false
+      slick_slider:
+        weight: 10
+        enabled: false
+      slider:
+        weight: 17
+        enabled: true
+      subscribe_newsletter:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

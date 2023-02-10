@@ -1,0 +1,44 @@
+uuid: ad5a6e97-0621-4df4-9a95-4ca086535a7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.how_can_we_help_your_bussiness_.field_business_card_body
+    - field.field.paragraph.how_can_we_help_your_bussiness_.field_business_card_image
+    - field.field.paragraph.how_can_we_help_your_bussiness_.field_business_card_title
+    - paragraphs.paragraphs_type.how_can_we_help_your_bussiness_
+  module:
+    - image
+    - text
+id: paragraph.how_can_we_help_your_bussiness_.default
+targetEntityType: paragraph
+bundle: how_can_we_help_your_bussiness_
+mode: default
+content:
+  field_business_card_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_business_card_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_business_card_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

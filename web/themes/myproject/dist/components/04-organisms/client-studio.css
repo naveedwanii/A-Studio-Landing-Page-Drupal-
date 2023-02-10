@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+.astudio__cs {
+  margin: 0 14px 0 14px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__cs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__cs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__cs-img1 {
+    height: 129px;
+    width: 129px;
+    position: relative;
+    top: -12.2rem;
+    background: url(".../../../../../images/Ellipse 85.png");
+  }
+
+  .astudio__cs-img2 {
+    height: 178px;
+    width: 178px;
+    position: absolute;
+    right: 8rem;
+    z-index: -5;
+    top: 28rem;
+    background: url(".../../../../../images/Rectangle 23.png");
+  }
+}
+
+.astudio__cs-block1 h2 {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-size: 40px;
+  line-height: 49.44px;
+  color: #000000;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__cs-block1 h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__cs-block1 h2 {
+    margin-bottom: 40px;
+  }
+}
+
+.astudio__cs-block1 p {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-size: 16px;
+  line-height: 25px;
+  color: #565656;
+}
+
+.astudio__cs-block1 button {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #2639ed;
+  border-radius: 60px;
+  padding: 20px 40px;
+  border: none;
+}
+
+.astudio__cs-block1 button a {
+  font-family: "Averta Demo PE Cutted Demo";
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__cs-block1 button {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__cs-block1 button {
+    width: 215px;
+    margin-top: 33px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__cs-block1 {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__cs-block1 {
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__cs-block2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__cs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=../../maps/04-organisms/client-studio.css.map */

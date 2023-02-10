@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "averto";
+  font-family: "Averta Demo PE Cutted Demo";
 
   font-style: normal;
 
@@ -8,7 +8,7 @@
   src: url(/themes/myproject/fonts/averto/Averto.ttf);
 }
 
-.subscribe-newsletter__container {
+.astudio-newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,64 +20,91 @@
           align-items: center;
   background-color: #f4f9ff;
   border-radius: 75px;
-  margin-left: 120px;
-  margin-right: 123px;
+  margin: 0 123px 0 120px;
 }
 
-.subscribe-newsletter__title {
-  font-family: "averto", sans-serif;
-  font-size: 400;
+.astudio-newsletter-b1 h2 {
+  font-family: "Averta Demo PE Cutted Demo";
   font-size: 40px;
-  line-height: 49px;
-  margin-top: 98px;
-  color: #000;
+  line-height: 49.44px;
+  color: #000000;
+  margin: 98px 0 17px 0;
 }
 
-.subscribe-newsletter__descript {
-  font-family: "averto", sans-serif;
-  font-size: 18px;
+.astudio-newsletter-b1 p {
+  font-family: "Averta Demo PE Cutted Demo";
   font-weight: 400;
-  line-height: 16px;
+  font-family: 18px;
+  line-height: 28px;
   color: #757575;
+  margin-bottom: 99px;
 }
 
-.subscribe-newsletter__button {
+.astudio-newsletter-b2 {
+  position: relative;
+  left: 12.5rem;
+  background-image: url(".../../../../../images/Rectangle 31.png");
+  background-repeat: no-repeat;
+  height: 292px;
+  width: 543px;
+}
+
+.astudio-newsletter-b2-dotImg {
+  position: absolute;
+  z-index: -5;
+  top: -5rem;
+  left: 22rem;
+  width: 175px;
+  height: 154px;
+  background-image: url(".../../../../../images/Dot 1.png");
+}
+
+.astudio-newsletter-b2-input input {
+  height: 80px;
+  border: 1px solid #f1f1f1;
+  border-radius: 60px;
+  margin-left: -95px;
+  margin-top: 106px;
+  -webkit-box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.astudio-newsletter-b2-input ::-webkit-input-placeholder {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #959595;
+}
+
+.astudio-newsletter-b2-button {
   width: 121px;
   background: #2639ed;
   border-radius: 60px;
   padding: 20px 40px;
   text-align: center;
   position: relative;
-  top: 5.6rem;
-  left: 6rem;
+  top: -4.4rem;
+  left: 11rem;
 }
 
-.subscribe-newsletter__button a {
+.astudio-newsletter-b2-button a {
   text-decoration: none;
-  color: #fff;
-  font-family: "averto", sans-serif;
+  color: #ffffff;
+  font-family: "Averta Demo PE Cutted Demo";
 }
 
-.subscribe-newsletter__webform input {
-  width: 479px;
-  height: 80px;
-  border: 1px solid #f1f1f1;
-  border-radius: 60px;
-  position: absolute;
-  right: 4rem;
-  top: 6rem;
+.astudio-newsletter-b2-button a:hover {
+  text-decoration: none;
 }
 
-.subscribe-newsletter__container-1 {
-  height: 292px;
-  width: 1197px;
-  text-align: center;
-}
-
-.subscribe-newsletter__container-2 {
-  background-image: url(".../../../../../images/Rectangle 31.png");
-  background-repeat: round;
-  height: 292px;
-  width: 543px;
+.bgcutImg {
+  height: 178px;
+  width: 178px;
+  position: relative;
+  top: 21rem;
+  left: 4rem;
+  z-index: -5;
+  background: url(".../../../../../images/Rectangle 32.png");
 }
 /*# sourceMappingURL=../../maps/04-organisms/subscribe-newletter.css.map */

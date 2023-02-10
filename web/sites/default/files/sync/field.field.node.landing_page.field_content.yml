@@ -1,0 +1,71 @@
+uuid: feaffc03-8cab-4588-826c-cf4c1f4668c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.client_studio
+    - paragraphs.paragraphs_type.digital_product
+    - paragraphs.paragraphs_type.how_can_we_help_your_bussiness_
+    - paragraphs.paragraphs_type.info_cards
+    - paragraphs.paragraphs_type.our_client
+    - paragraphs.paragraphs_type.our_happy_client
+    - paragraphs.paragraphs_type.slick_slider
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.subscribe_newsletter
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_content
+field_name: field_content
+entity_type: node
+bundle: landing_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      client_studio: client_studio
+      our_client: our_client
+      how_can_we_help_your_bussiness_: how_can_we_help_your_bussiness_
+      digital_product: digital_product
+      subscribe_newsletter: subscribe_newsletter
+      info_cards: info_cards
+      slick_slider: slick_slider
+      our_happy_client: our_happy_client
+      slider: slider
+    negate: 0
+    target_bundles_drag_drop:
+      client_studio:
+        weight: -9
+        enabled: true
+      digital_product:
+        weight: -6
+        enabled: true
+      how_can_we_help_your_bussiness_:
+        weight: -7
+        enabled: true
+      info_cards:
+        weight: 8
+        enabled: true
+      our_client:
+        weight: -8
+        enabled: true
+      our_happy_client:
+        weight: 10
+        enabled: true
+      slick_slider:
+        weight: 9
+        enabled: true
+      slider:
+        weight: 17
+        enabled: true
+      subscribe_newsletter:
+        weight: 7
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "averto";
+  font-family: "Averta Demo PE Cutted Demo";
 
   font-style: normal;
 
@@ -8,84 +8,59 @@
   src: url(/themes/myproject/fonts/averto/Averto.ttf);
 }
 
-.image-logo {
-  position: absolute;
-  left: 3rem;
+@media (min-width: 1025px) {
+  .astudio__site-logo {
+    position: absolute;
+    left: 7.1rem;
+  }
 }
 
-.menu__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  list-style-type: none;
-  margin-top: 26px;
+.astudio__menu-link {
+  list-style: none;
 }
 
-.menu__link-li {
-  margin-right: 20px;
-}
-
-.menu__link-a {
-  font-family: "averto", sans-serif;
+.astudio__menu-link-a {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
+  color: #000000;
   letter-spacing: 0.1em;
   text-decoration: none;
-  color: #000;
 }
 
-.client__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.client__studio {
-  margin-left: 120px;
-}
-
-.client__dotimg {
-  height: 154px;
-  width: 404px;
-  background: url(".../../../../../images/Dot Ornament.png");
-}
-
-.client__title {
-  font-family: "averto", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 49px;
-  margin-bottom: 40px;
-  color: #000;
-}
-
-.client__description {
-  font-family: "averto", sans-serif;
-  font-size: 16px;
-  line-height: 25px;
-  font-weight: 400;
-  margin-bottom: 33px;
-  color: #565656;
-  margin-right: 95px;
-  margin-bottom: 33px;
-}
-
-.client__link a {
-  font-family: "averto", sans-serif;
-  background: #2639ed;
-  padding: 20px 40px;
-  border-radius: 60px;
-  color: #fff;
+.astudio__menu-link-a:hover {
   text-decoration: none;
+}
+
+@media (min-width: 1025px) {
+  .astudio__menu-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    list-style: none;
+    margin-top: 26px;
+  }
+
+  .astudio__menu-link-li {
+    margin-right: 20px;
+  }
+
+  .astudio__menu-link-a {
+    font-family: "Averta Demo PE Cutted Demo";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+  }
+
+  .astudio__menu-link-a:hover {
+    text-decoration: none;
+  }
 }
 /*# sourceMappingURL=../../maps/04-organisms/header.css.map */

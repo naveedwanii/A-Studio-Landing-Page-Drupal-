@@ -1,0 +1,46 @@
+uuid: 82d43cb1-15e3-412d-900d-f3a4f6a31752
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_how_can_we_help_your_bussi
+    - node.type.a_studio
+    - paragraphs.paragraphs_type.how_can_we_help_your_bussiness_
+  module:
+    - entity_reference_revisions
+id: node.a_studio.field_how_can_we_help_your_bussi
+field_name: field_how_can_we_help_your_bussi
+entity_type: node
+bundle: a_studio
+label: 'How can we help your Bussiness?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      how_can_we_help_your_bussiness_: how_can_we_help_your_bussiness_
+    negate: 0
+    target_bundles_drag_drop:
+      client_studio:
+        weight: 7
+        enabled: false
+      digital_product:
+        weight: 8
+        enabled: false
+      how_can_we_help_your_bussiness_:
+        weight: 9
+        enabled: true
+      our_client:
+        weight: 10
+        enabled: false
+      our_happy_client:
+        weight: 11
+        enabled: false
+      subscribe_newsletter:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

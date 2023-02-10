@@ -1,0 +1,10 @@
+uuid: 48103bad-ccc4-4731-b90f-4736617f5b58
+langcode: en
+status: true
+dependencies: {  }
+id: slick_slider
+label: 'Slick Slider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
