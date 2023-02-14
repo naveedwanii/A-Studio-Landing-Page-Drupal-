@@ -26,12 +26,19 @@ slick:
 #     theme:
 #       dist/components/tailwind.css: {}
 
+container:
+  css:
+    theme:
+      dist/components/04-organisms/container.css: {}
+
+
 header:
   css:
     theme:
       dist/components/04-organisms/header.css: {}
   js:
-    dist/components/molecules/slider.js: {}
+    dist/components/main.js: {}
+    dist/components/hamburger.js: {}
   dependencies:
     - myproject/slick
 

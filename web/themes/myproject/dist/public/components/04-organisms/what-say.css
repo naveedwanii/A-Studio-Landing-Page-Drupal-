@@ -9,13 +9,11 @@
 }
 
 .astudio__oh {
-  margin-top: 117px;
-  text-align: center;
+  margin: 50px 14px 0 14px;
 }
 
 .astudio__oh h2 {
   font-family: "Averta Demo PE Cutted Demo";
-  font-weight: 400;
   font-size: 40px;
   line-height: 49.44px;
   color: #000000;
@@ -31,9 +29,17 @@
   margin: 17px 0 0 0;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .astudio__oh {
-    margin: 50px 20px 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__oh {
+    margin-top: 0;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=../../maps/04-organisms/what-say.css.map */

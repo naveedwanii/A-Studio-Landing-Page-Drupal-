@@ -40,17 +40,15 @@
 #}
 
 {{ attach_library('myproject/subscribe-newsletter')}}
-<div class='bgcutImg'></div>
 <div class='astudio-newsletter'>
   <div class='astudio-newsletter-b1'>
     <h2>{{ content.field_subscribe_title.0 }}</h2>
     <p>{{ content.field_subscribe_body.0 }}</p>
   </div>
   <div class='astudio-newsletter-b2'>
-    {# {{ content.field_subscribe_form }} #}
-    <div class='astudio-newsletter-b2-dotImg'></div>
-    <div class='astudio-newsletter-b2-input'> {{ content.field_subscribe_form }}</div>
-    <div class='astudio-newsletter-b2-button'>{{ content.field_subscribe_button }}</div>
+      <div class='astudio-newsletter-b2-input'> {{ content.field_subscribe_form }}</div>
+      <div class='astudio-newsletter-b2-button'>{{ content.field_subscribe_button }}</div>
+      <div class='bgcutImg'></div>
   </div>
 </div>
 

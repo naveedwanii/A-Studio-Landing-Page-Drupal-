@@ -16,6 +16,7 @@ elements: |-
   subscribe_webform:
     '#type': textfield
     '#title': 'Subscribe Webform'
+    '#title_display': none
     '#placeholder': '        Enter your email address..'
   actions:
     '#type': webform_actions

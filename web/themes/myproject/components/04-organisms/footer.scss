@@ -1,9 +1,9 @@
 @import '../config.all';
 
 .astudio__footer-container {
-  @include d-flex-end();
-  align-items: center;
-
+  display: block;
+  margin-left: 14px;
+  padding-left: 0;
   &-li {
     list-style: none;
     margin-right: 50px;
@@ -25,11 +25,13 @@
       color: $color-black;
     }
   }
-
-  @include breakpoint($mobile) {
-    display: block;
-    padding-left: 14px;
-    padding-top: 20px;
+  @include breakpoint($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include breakpoint($desktop) {
+    @include d-flex-end();
+    align-items: center;
   }
 }
 
@@ -51,9 +53,7 @@
 }
 
 .astudio__footer-container-block {
-  position: relative;
-  top: 15rem;
-  margin-left: 120px;
+  margin-left: 14px;
   &-descrip {
     @include text-small();
     width: 270px;
@@ -86,11 +86,14 @@
       margin-top: 40px;
     }
   }
-
-  @include breakpoint($mobile) {
+  @include breakpoint($desktop) {
     position: relative;
-    top: 0;
-    margin-left: 14px;
+    top: 15rem;
+    margin-left: 80px;
+  }
+
+  @include breakpoint($large-desktop) {
+    margin-left: 120px;
   }
 }
 
@@ -99,25 +102,17 @@
     border: 1px solid $color-white-1;
     margin-top: 29px;
     margin-right: 120px;
-
-    @include breakpoint($mobile) {
-      display: none;
-    }
   }
 
   &-above {
     border: 1px solid $color-white-1;
     margin-bottom: 60px;
     margin-right: 120px;
-
-    @include breakpoint($mobile) {
-      display: none;
-    }
   }
 }
 .astudio__footer-secondary {
-  position: absolute;
-  left: 40rem;
-  top: 7rem;
   @include text-small();
+  text-align: center;
+  padding-top: 117px;
+  padding-bottom: 23px;
 }

@@ -9,27 +9,24 @@
 }
 
 .astudio-newsletter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #f4f9ff;
+  margin: 0 14px 0 14px;
+  background-size: 99% 100%;
+  background-image: url(".../../../../../images/Rectangle 30.png");
+  background-repeat: no-repeat;
   border-radius: 75px;
-  margin: 0 123px 0 120px;
+}
+
+.astudio-newsletter-b1 {
+  padding: 37px 28px 4px;
 }
 
 .astudio-newsletter-b1 h2 {
   font-family: "Averta Demo PE Cutted Demo";
-  font-weight: 400;
   font-size: 40px;
   line-height: 49.44px;
   color: #000000;
-  margin: 98px 0 17px 0;
+  margin-bottom: 17px;
+  margin-top: 0;
 }
 
 .astudio-newsletter-b1 p {
@@ -38,69 +35,34 @@
   font-family: 18px;
   line-height: 28px;
   color: #757575;
-  margin-bottom: 99px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (min-width: 1025px) {
   .astudio-newsletter-b1 {
-    text-align: center;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding: 98px 0 99px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .astudio-newsletter-b1 {
+    padding: 98px 0 99px 92px;
   }
 }
 
 .astudio-newsletter-b2 {
+  padding-bottom: 40px;
   position: relative;
-  left: 12.5rem;
-  background-image: url(".../../../../../images/Rectangle 31.png");
-  background-repeat: no-repeat;
-  height: 292px;
-  width: 543px;
-}
-
-.astudio-newsletter-b2-dotImg {
-  position: absolute;
-  z-index: -5;
-  top: -5rem;
-  left: 22rem;
-  width: 175px;
-  height: 154px;
-  background-image: url(".../../../../../images/Dot 1.png");
-}
-
-.astudio-newsletter-b2-input input {
-  height: 80px;
-  border: 1px solid #f1f1f1;
-  border-radius: 60px;
-  margin-left: -95px;
-  margin-top: 106px;
-  -webkit-box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
-          box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
-}
-
-@media (min-width: 0) and (max-width: 768px) {
-  .astudio-newsletter-b2-input input {
-    width: 60%;
-  }
-}
-
-.astudio-newsletter-b2-input ::-webkit-input-placeholder {
-  font-family: "Averta Demo PE Cutted Demo";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #959595;
 }
 
 .astudio-newsletter-b2-button {
-  width: 121px;
+  margin: 10px 41px 0 16px;
+  width: 68%;
   background: #2639ed;
   border-radius: 60px;
   padding: 20px 40px;
   text-align: center;
-  position: relative;
-  top: -4.4rem;
-  left: 11rem;
 }
 
 .astudio-newsletter-b2-button a {
@@ -113,24 +75,147 @@
   text-decoration: none;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
-  .astudio-newsletter {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 30px;
-    margin-right: 2px;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio-newsletter-b2-button {
+    width: 94%;
   }
 }
 
-.bgcutImg {
-  height: 178px;
-  width: 178px;
-  position: relative;
-  top: 21rem;
-  left: 4rem;
-  z-index: -5;
-  background: url(".../../../../../images/Rectangle 32.png");
+@media (min-width: 1025px) {
+  .astudio-newsletter-b2-button {
+    max-width: 192px;
+    position: relative;
+    top: -0.3rem;
+    left: 7.9rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .astudio-newsletter-b2-button {
+    top: -0.3rem;
+    left: 8.9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio-newsletter-b2 {
+    padding-bottom: 80px;
+  }
+}
+
+.astudio-newsletter-b2-input {
+  margin-top: 20px;
+}
+
+.astudio-newsletter-b2-input input {
+  width: 90%;
+  margin-left: 14px;
+  height: 80px;
+  border: 1px solid #f1f1f1;
+  border-radius: 60px;
+  -webkit-box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.astudio-newsletter-b2-input ::-webkit-input-placeholder {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #959595;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio-newsletter-b2-input {
+    margin-right: 53px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio-newsletter-b2-input {
+    max-width: 430px;
+    position: relative;
+    top: 5rem;
+    left: -6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .astudio-newsletter-b2-input {
+    max-width: 479px;
+    position: relative;
+    top: 5rem;
+    left: -8rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio-newsletter-b2-dotImg {
+    position: absolute;
+    z-index: -5;
+    top: -4rem;
+    left: 22rem;
+    width: 175px;
+    height: 154px;
+    background-image: url(".../../../../../images/Dot 1.png");
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio-newsletter-b2 {
+    padding-bottom: 0;
+    max-width: 500px;
+    background-size: 99% 81%;
+    background-repeat: no-repeat;
+    background-image: url(".../../../../../images/Rectangle 31.png");
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio-newsletter-b2 .bgcutImg {
+    height: 178px;
+    width: 178px;
+    position: relative;
+    top: 0rem;
+    left: -48rem;
+    z-index: -5;
+    background: url(".../../../../../images/Rectangle 32.png");
+  }
+}
+
+@media (min-width: 1025px) and (min-width: 1025px) {
+  .astudio-newsletter-b2 .bgcutImg {
+    left: -43rem;
+  }
+}
+
+@media (min-width: 1025px) and (min-width: 1440px) {
+  .astudio-newsletter-b2 .bgcutImg {
+    left: -48rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio-newsletter {
+    background-size: 100% 92%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio-newsletter {
+    display: grid;
+    grid-template-columns: 1fr 497px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-size: 80% 81%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .astudio-newsletter {
+    margin-left: 120px;
+    margin-right: 120px;
+    background-size: 80% 81%;
+  }
 }
 /*# sourceMappingURL=../../maps/04-organisms/subscribe-newletter.css.map */

@@ -9,15 +9,9 @@
 }
 
 .astudio__footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  margin-left: 14px;
+  padding-left: 0;
 }
 
 .astudio__footer-container-li {
@@ -46,11 +40,27 @@
   color: #000000;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .astudio__footer-container {
-    display: block;
-    padding-left: 14px;
-    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -78,9 +88,7 @@
 }
 
 .astudio__footer-container-block {
-  position: relative;
-  top: 15rem;
-  margin-left: 120px;
+  margin-left: 14px;
 }
 
 .astudio__footer-container-block-descrip {
@@ -145,11 +153,17 @@
   margin-top: 40px;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (min-width: 1025px) {
   .astudio__footer-container-block {
     position: relative;
-    top: 0;
-    margin-left: 14px;
+    top: 15rem;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .astudio__footer-container-block {
+    margin-left: 120px;
   }
 }
 
@@ -159,32 +173,20 @@
   margin-right: 120px;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
-  .footer__line-below {
-    display: none;
-  }
-}
-
 .footer__line-above {
   border: 1px solid #f1f1f1;
   margin-bottom: 60px;
   margin-right: 120px;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
-  .footer__line-above {
-    display: none;
-  }
-}
-
 .astudio__footer-secondary {
-  position: absolute;
-  left: 40rem;
-  top: 7rem;
   font-family: "Averta Demo PE Cutted Demo";
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #565656;
+  text-align: center;
+  padding-top: 117px;
+  padding-bottom: 23px;
 }
 /*# sourceMappingURL=../../maps/04-organisms/footer.css.map */
