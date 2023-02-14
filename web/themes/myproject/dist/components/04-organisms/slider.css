@@ -8,12 +8,6 @@
   src: url(/themes/myproject/fonts/averto/Averto.ttf);
 }
 
-.astudio__slick-slider-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,22 +33,7 @@
 }
 
 .astudio__slick-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 119px;
-}
-
-.astudio__slick-slider-proundImg {
-  height: 120px;
-  width: 120px;
-  position: absolute;
-  z-index: -5;
-  top: 20rem;
-  background-image: url(".../../../../../images/Ellipse 94.png");
+  display: block;
 }
 
 .astudio__slick-slider-b1 img {
@@ -69,7 +48,6 @@
 
 .astudio__slick-slider-b2 h2 {
   font-family: "Averta Demo PE Cutted Demo";
-  font-weight: 400;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
@@ -77,7 +55,6 @@
 
 .astudio__slick-slider-b2 p {
   font-family: "Averta Demo PE Cutted Demo";
-  font-weight: 400;
   font-size: 16px;
   line-height: 25px;
   color: #565656;
@@ -85,6 +62,12 @@
 
 .astudio__slick-slider-b2-dotImg {
   background-image: url(".../../../../../images/Dot.png");
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__slick-slider-b2 {
+    margin-left: 14px;
+  }
 }
 
 .astudio__slick-slider-roundImg {
@@ -152,5 +135,23 @@
 .astudio__slick-slider_roundImgs-bl8 {
   -webkit-transform: rotate(116deg) translate(-19em) rotate(-120deg);
           transform: rotate(116deg) translate(-19em) rotate(-120deg);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__slick-slider {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__slick-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 119px;
+  }
 }
 /*# sourceMappingURL=../../maps/04-organisms/slider.css.map */

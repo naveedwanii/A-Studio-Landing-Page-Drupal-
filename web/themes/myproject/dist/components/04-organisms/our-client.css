@@ -9,20 +9,14 @@
 }
 
 .astudio__oc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 120px 120px 0 120px;
+  margin: 60px 14px 0;
 }
 
 .astudio__oc-block1 h2 {
   font-family: "Averta Demo PE Cutted Demo";
-  font-weight: 400;
   font-size: 40px;
   line-height: 49.44px;
   color: #000000;
-  margin-bottom: 17px;
-  margin-top: 16px;
 }
 
 .astudio__oc-block1 p {
@@ -31,59 +25,69 @@
   font-family: 18px;
   line-height: 28px;
   color: #757575;
-  margin: 17px 60px 0 0;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
-  .astudio__oc-block2 {
-    width: 30%;
+@media (min-width: 1025px) {
+  .astudio__oc-block1 p {
+    margin-right: 60px;
   }
 }
 
-.astudio__oc .ourclient-images {
+.astudio__oc-block2 .ourclient-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 75px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.astudio__oc .ourclient-images .ourclient-img {
-  margin-left: 60px;
+.astudio__oc-block2 .ourclient-images .ourclient-img {
+  margin-right: 20px;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
-  .astudio__oc .ourclient-images .ourclient-img {
-    margin-top: 30px;
-    margin-bottom: 12px;
+@media (min-width: 1025px) {
+  .astudio__oc-block2 .ourclient-images .ourclient-img {
+    margin-right: 60px;
   }
 }
 
-.astudio__oc .ourclient-images .ourclient-img:last-child {
-  padding-top: 10px;
-}
-
-@media (min-width: 0) and (max-width: 768px) {
-  .astudio__oc .ourclient-images {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 0;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .astudio__oc-block2 .ourclient-images {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: self-end;
+        -ms-flex-align: self-end;
+            align-items: self-end;
   }
 }
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (min-width: 1025px) {
+  .astudio__oc-block2 .ourclient-images {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .astudio__oc {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 14px;
-    margin-right: 0;
-    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__oc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 136px 120px 0 120px;
   }
 }
 /*# sourceMappingURL=../../maps/04-organisms/our-client.css.map */

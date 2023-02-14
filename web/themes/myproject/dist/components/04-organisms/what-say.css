@@ -15,7 +15,6 @@
 
 .astudio__oh h2 {
   font-family: "Averta Demo PE Cutted Demo";
-  font-weight: 400;
   font-size: 40px;
   line-height: 49.44px;
   color: #000000;
@@ -29,11 +28,5 @@
   line-height: 28px;
   color: #757575;
   margin: 17px 0 0 0;
-}
-
-@media (min-width: 0) and (max-width: 768px) {
-  .astudio__oh {
-    margin: 50px 20px 0;
-  }
 }
 /*# sourceMappingURL=../../maps/04-organisms/what-say.css.map */
