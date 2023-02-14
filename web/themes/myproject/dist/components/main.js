@@ -13,5 +13,14 @@
 //     },
 //   };
 // })(jQuery, Drupal);
+(function ($) {
+    $('.astudio__slick-slider-container').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+})(jQuery);
 
 //# sourceMappingURL=../maps/main.js.map

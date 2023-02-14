@@ -14,38 +14,55 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .astudio__cs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 1025px) {
   .astudio__cs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 471px 1fr;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-column-gap: 95px;
+       -moz-column-gap: 95px;
+            column-gap: 95px;
   }
 }
 
 @media (min-width: 1025px) {
+  .astudio__cs {
+    margin: 0 0 0 120px;
+  }
+
   .astudio__cs-img1 {
     height: 129px;
     width: 129px;
-    position: relative;
-    top: -12.2rem;
+    position: absolute;
+    left: 31rem;
+    z-index: -5;
+    top: -21rem;
     background: url(".../../../../../images/Ellipse 85.png");
   }
+}
 
+@media (min-width: 1025px) and (min-width: 1025px) {
+  .astudio__cs-img1 {
+    left: 39rem;
+    top: 1.1rem;
+  }
+}
+
+@media (min-width: 1025px) and (min-width: 1440px) {
+  .astudio__cs-img1 {
+    left: 39rem;
+    top: 1.1rem;
+  }
+}
+
+@media (min-width: 1025px) {
   .astudio__cs-img2 {
     height: 178px;
     width: 178px;
@@ -54,6 +71,27 @@
     z-index: -5;
     top: 28rem;
     background: url(".../../../../../images/Rectangle 23.png");
+  }
+}
+
+@media (min-width: 1025px) and (min-width: 1025px) {
+  .astudio__cs-img2 {
+    top: 21rem;
+  }
+}
+
+@media (min-width: 1025px) and (min-width: 1440px) {
+  .astudio__cs-img2 {
+    top: 28rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__cs-dotImg {
+    width: 404px;
+    height: 154px;
+    margin: -61px 0 0 -53px;
+    background: url(".../../../../../images/Dot Ornament.png") no-repeat;
   }
 }
 
@@ -66,12 +104,14 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .astudio__cs-block1 h2 {
+    width: 100%;
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 1025px) {
   .astudio__cs-block1 h2 {
+    width: 100%;
     margin-bottom: 40px;
   }
 }
@@ -81,10 +121,12 @@
   font-size: 16px;
   line-height: 25px;
   color: #565656;
+  margin: 0;
 }
 
 .astudio__cs-block1 button {
   width: 100%;
+  margin-top: 10px;
   margin-bottom: 30px;
   background-color: #2639ed;
   border-radius: 60px;
@@ -106,7 +148,7 @@
 
 @media (min-width: 1025px) {
   .astudio__cs-block1 button {
-    width: 215px;
+    max-width: 215px;
     margin-top: 33px;
   }
 }
@@ -117,22 +159,10 @@
   }
 }
 
-@media (min-width: 1025px) {
-  .astudio__cs-block1 {
-    margin-left: 120px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .astudio__cs-block2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.astudio__cs-block2-img img {
+  height: 100%;
+  max-height: 542px;
+  width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

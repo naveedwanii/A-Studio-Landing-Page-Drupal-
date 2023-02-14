@@ -3,6 +3,7 @@
 .astudio__footer-container {
   display: block;
   margin-left: 14px;
+  padding-left: 0;
   &-li {
     list-style: none;
     margin-right: 50px;
@@ -88,13 +89,12 @@
   @include breakpoint($desktop) {
     position: relative;
     top: 15rem;
+    margin-left: 80px;
+  }
+
+  @include breakpoint($large-desktop) {
     margin-left: 120px;
   }
-  // @include breakpoint($mobile) {
-  //   position: relative;
-  //   top: 0;
-  //   margin-left: 14px;
-  // }
 }
 
 .footer__line {
@@ -102,24 +102,17 @@
     border: 1px solid $color-white-1;
     margin-top: 29px;
     margin-right: 120px;
-
-    // @include breakpoint($mobile) {
-    //   display: none;
-    // }
   }
 
   &-above {
     border: 1px solid $color-white-1;
     margin-bottom: 60px;
     margin-right: 120px;
-
-    // @include breakpoint($mobile) {
-    //   display: none;
-    // }
   }
 }
 .astudio__footer-secondary {
   @include text-small();
   text-align: center;
   padding-top: 117px;
+  padding-bottom: 23px;
 }

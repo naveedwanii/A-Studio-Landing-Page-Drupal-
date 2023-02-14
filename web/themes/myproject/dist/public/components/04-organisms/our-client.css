@@ -17,9 +17,10 @@
   font-size: 40px;
   line-height: 49.44px;
   color: #000000;
+  margin: 0 0 17px 0;
 }
 
-.astudio__oc-block1 p {
+.astudio__oc p {
   font-family: "Averta Demo PE Cutted Demo";
   font-weight: 400;
   font-family: 18px;
@@ -27,27 +28,50 @@
   color: #757575;
 }
 
-@media (min-width: 1025px) {
-  .astudio__oc-block1 p {
-    margin-right: 60px;
-  }
-}
-
 .astudio__oc-block2 .ourclient-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .astudio__oc-block2 .ourclient-images .ourclient-img {
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 @media (min-width: 1025px) {
   .astudio__oc-block2 .ourclient-images .ourclient-img {
     margin-right: 60px;
+    margin-top: 0;
+  }
+}
+
+.astudio__oc-block2 .ourclient-images .ourclient-img img {
+  width: 100%;
+  min-width: 90px;
+  max-width: 149px;
+  height: 100%;
+}
+
+.astudio__oc-block2 .ourclient-images .ourclient-img:last-child img {
+  margin-top: 21px;
+}
+
+@media (min-width: 1025px) {
+  .astudio__oc-block2 .ourclient-images .ourclient-img:last-child img {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .astudio__oc-block2 .ourclient-images .ourclient-img:nth-child(4) {
+    margin-top: 18px;
+    margin-right: 0;
   }
 }
 
@@ -55,9 +79,9 @@
   .astudio__oc-block2 .ourclient-images {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: self-end;
-        -ms-flex-align: self-end;
-            align-items: self-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -68,6 +92,13 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .astudio__oc-block2 {
+    margin-left: 60px;
+    padding-top: 30px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .astudio__oc {
     display: -webkit-box;
@@ -81,13 +112,29 @@
 
 @media (min-width: 1025px) {
   .astudio__oc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 324px 1fr;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 136px 120px 0 120px;
+  }
+
+  .astudio__oc h2 {
+    font-family: "Averta Demo PE Cutted Demo";
+    font-size: 40px;
+    line-height: 49.44px;
+    color: #000000;
+    margin: 0 0 17px 0;
+  }
+
+  .astudio__oc p {
+    font-family: "Averta Demo PE Cutted Demo";
+    font-weight: 400;
+    font-family: 18px;
+    line-height: 28px;
+    color: #757575;
+    margin: 0 0 17px 0;
   }
 }
 /*# sourceMappingURL=../../maps/04-organisms/our-client.css.map */
