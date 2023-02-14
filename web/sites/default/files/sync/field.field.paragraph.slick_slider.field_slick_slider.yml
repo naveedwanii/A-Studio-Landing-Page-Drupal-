@@ -1,4 +1,4 @@
-uuid: 1edf3b34-57f2-402f-9e3c-107f65700191
+uuid: 57e4c1c5-0fc9-41db-bc85-f28262287744
 langcode: en
 status: true
 dependencies:
@@ -26,30 +26,27 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       client_studio:
-        weight: 11
-        enabled: false
-      digital_product:
-        weight: 12
-        enabled: false
-      how_can_we_help_your_bussiness_:
-        weight: 13
-        enabled: false
-      info_cards:
-        weight: 14
-        enabled: false
-      our_client:
-        weight: 15
-        enabled: false
-      our_happy_client:
-        weight: 16
-        enabled: false
-      slick_slider:
         weight: 10
         enabled: false
-      slider:
-        weight: 17
-        enabled: true
-      subscribe_newsletter:
-        weight: 18
+      digital_product:
+        weight: 11
         enabled: false
+      how_can_we_help_your_bussiness_:
+        weight: 12
+        enabled: false
+      info_cards:
+        weight: 13
+        enabled: false
+      our_client:
+        weight: 14
+        enabled: false
+      our_happy_client:
+        weight: 15
+        enabled: false
+      slick_slider:
+        weight: 9
+        enabled: false
+      slider:
+        weight: 16
+        enabled: true
 field_type: entity_reference_revisions

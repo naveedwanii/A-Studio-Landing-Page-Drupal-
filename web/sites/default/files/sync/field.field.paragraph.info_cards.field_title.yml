@@ -1,4 +1,4 @@
-uuid: fef5b3a4-d9ba-4d7d-8bd7-4d47d1fced69
+uuid: 45899b33-1843-4925-93db-6ffd6f842783
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: paragraph.info_cards.field_title
 field_name: field_title
 entity_type: paragraph
 bundle: info_cards
-label: Title
+label: title
 description: ''
 required: false
 translatable: false

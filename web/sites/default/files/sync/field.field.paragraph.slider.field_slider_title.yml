@@ -1,4 +1,4 @@
-uuid: 745271e6-e58e-4fbe-81dd-081f0074813a
+uuid: 4f824fc9-8cb9-4809-aa18-3b78bc4cb913
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: paragraph.slider.field_slider_title
 field_name: field_slider_title
 entity_type: paragraph
 bundle: slider
-label: 'Slider Title'
+label: 'slider title'
 description: ''
 required: false
 translatable: false
