@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+.astudio__slick-slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -13rem;
+}
+
+.slick-dots li {
+  height: 16px;
+  width: 16px;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.slick-dots li:hover button {
+  display: none;
+}
+
+.astudio__slick-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 119px;
+}
+
+.astudio__slick-slider-proundImg {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  z-index: -5;
+  top: 20rem;
+  background-image: url(".../../../../../images/Ellipse 94.png");
+}
+
+.astudio__slick-slider-b1 img {
+  height: 389px;
+  width: 389px;
+}
+
+.astudio__slick-slider-b2 {
+  width: 412px;
+  margin-right: 38px;
+}
+
+.astudio__slick-slider-b2 h2 {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.astudio__slick-slider-b2 p {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #565656;
+}
+
+.astudio__slick-slider-b2-dotImg {
+  background-image: url(".../../../../../images/Dot.png");
+}
+
+.astudio__slick-slider-roundImg {
+  height: 184px;
+  width: 184px;
+  position: relative;
+  top: 0;
+  z-index: -5;
+  right: 5rem;
+  background-image: url(".../../../../../images/Ellipse 93.png");
+}
+
+.astudio__slick-slider_roundImgs {
+  position: relative;
+  border-radius: 50%;
+}
+
+.astudio__slick-slider_roundImgs a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  margin: -2em;
+}
+
+.astudio__slick-slider_roundImgs-bl1 {
+  -webkit-transform: rotate(261deg) translate(-8em) rotate(96deg);
+          transform: rotate(261deg) translate(-8em) rotate(96deg);
+  top: 50px;
+  position: relative;
+}
+
+.astudio__slick-slider_roundImgs-bl2 {
+  -webkit-transform: rotate(80deg) translate(14em) rotate(-81deg);
+          transform: rotate(80deg) translate(14em) rotate(-81deg);
+}
+
+.astudio__slick-slider_roundImgs-bl3 {
+  -webkit-transform: rotate(63deg) translate(15em) rotate(-64deg);
+          transform: rotate(63deg) translate(15em) rotate(-64deg);
+}
+
+.astudio__slick-slider_roundImgs-bl4 {
+  -webkit-transform: rotate(199deg) translate(-16.8em) rotate(-205deg);
+          transform: rotate(199deg) translate(-16.8em) rotate(-205deg);
+}
+
+.astudio__slick-slider_roundImgs-bl5 {
+  -webkit-transform: rotate(-12deg) translate(19em) rotate(14deg);
+          transform: rotate(-12deg) translate(19em) rotate(14deg);
+}
+
+.astudio__slick-slider_roundImgs-bl6 {
+  -webkit-transform: rotate(322deg) translate(21em) rotate(-325deg);
+          transform: rotate(322deg) translate(21em) rotate(-325deg);
+}
+
+.astudio__slick-slider_roundImgs-bl7 {
+  -webkit-transform: rotate(116deg) translate(-22em) rotate(-118deg);
+          transform: rotate(116deg) translate(-22em) rotate(-118deg);
+}
+
+.astudio__slick-slider_roundImgs-bl8 {
+  -webkit-transform: rotate(116deg) translate(-19em) rotate(-120deg);
+          transform: rotate(116deg) translate(-19em) rotate(-120deg);
+}
+/*# sourceMappingURL=../../maps/04-organisms/slider.css.map */

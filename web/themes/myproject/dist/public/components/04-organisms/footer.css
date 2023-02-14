@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "averto";
+  font-family: "Averta Demo PE Cutted Demo";
 
   font-style: normal;
 
@@ -8,7 +8,7 @@
   src: url(/themes/myproject/fonts/averto/Averto.ttf);
 }
 
-.footer__container {
+.astudio__footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,124 +20,171 @@
           align-items: center;
 }
 
-.footer__container-li {
+.astudio__footer-container-li {
   list-style: none;
   margin-right: 50px;
 }
 
-.footer__container-li a {
-  font-family: "averto", sans-serif;
+.astudio__footer-container-li a {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-  font-weight: 400;
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
-.footer__container-ul {
+.astudio__footer-container-ul {
+  margin-top: 24px;
   padding: 0;
 }
 
-.footer__container .menu-level-0 > a {
+.astudio__footer-container .menu-level-0 > a {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  color: #000;
+  color: #000000;
 }
 
-.footer__menu__logo-des p {
+@media (min-width: 0) and (max-width: 768px) {
+  .astudio__footer-container {
+    display: block;
+    padding-left: 14px;
+    padding-top: 20px;
+  }
+}
+
+.astudio__footer-menu_container {
+  position: absolute;
+  left: 2rem;
+}
+
+.astudio__footer-menu_container-des {
   margin-right: 120px;
 }
 
-.footer__menu__logo-links {
+.astudio__footer-menu_container-des p {
+  margin-right: 120px;
+}
+
+.astudio__footer-menu_container-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer__menu__logo-links a {
+.astudio__footer-menu_container-links a {
   text-decoration: none;
 }
 
-.footer__container-block {
+.astudio__footer-container-block {
   position: relative;
-  top: 12rem;
+  top: 15rem;
   margin-left: 120px;
 }
 
-.footer__container-descrip {
-  font-family: "averto", sans-serif;
+.astudio__footer-container-block-descrip {
+  font-family: "Averta Demo PE Cutted Demo";
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  width: 270px;
   color: #565656;
+  width: 270px;
 }
 
-.footer__container-sociallinks a[href*=facebook] {
+.astudio__footer-container-block-sociallinks a[href*=facebook] {
   background-color: #3b5998;
   background-repeat: no-repeat;
   display: block;
-  width: 25px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   text-align: center;
-  padding: 8px;
   text-decoration: none;
   margin-right: 16px;
-  content: url(".../../../../../images/facebook.png");
+  content: url(".../../../../../images/fb-new.png");
 }
 
-.footer__container-sociallinks a[href*=twitter] {
+.astudio__footer-container-block-sociallinks a[href*=twitter] {
   background-color: #55acee;
   background-repeat: no-repeat;
   display: block;
-  width: 25px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   text-align: center;
-  padding: 8px;
   text-decoration: none;
   margin-right: 16px;
-  content: url(".../../../../../images/twitter.png");
+  content: url(".../../../../../images/tw-new.png");
 }
 
-.footer__container-sociallinks a[href*=linkedin] {
+.astudio__footer-container-block-sociallinks a[href*=linkedin] {
   background-color: #007ab9;
   background-repeat: no-repeat;
   display: block;
-  width: 25px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   text-align: center;
-  padding: 8px;
   text-decoration: none;
   margin-right: 16px;
-  content: url(".../../../../../images/linkedin.png");
+  content: url(".../../../../../images/lk-new.png");
 }
 
-.footer__container-sociallinks div {
+.astudio__footer-container-block-sociallinks div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer__container-sociallinks a {
+.astudio__footer-container-block-sociallinks a {
   text-decoration: none;
 }
 
-.footer__line {
-  border: 1px solid #f1f1f1;
+.astudio__footer-container-block-sociallinks .footer__links {
+  margin-top: 40px;
 }
 
-.footer__secondary {
+@media (min-width: 0) and (max-width: 768px) {
+  .astudio__footer-container-block {
+    position: relative;
+    top: 0;
+    margin-left: 14px;
+  }
+}
+
+.footer__line-below {
+  border: 1px solid #f1f1f1;
+  margin-top: 29px;
+  margin-right: 120px;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+  .footer__line-below {
+    display: none;
+  }
+}
+
+.footer__line-above {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 60px;
+  margin-right: 120px;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+  .footer__line-above {
+    display: none;
+  }
+}
+
+.astudio__footer-secondary {
   position: absolute;
   left: 40rem;
-  top: 4rem;
-  font-family: "averto", sans-serif;
+  top: 7rem;
+  font-family: "Averta Demo PE Cutted Demo";
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #a4a4a4;
+  color: #565656;
 }
 /*# sourceMappingURL=../../maps/04-organisms/footer.css.map */
