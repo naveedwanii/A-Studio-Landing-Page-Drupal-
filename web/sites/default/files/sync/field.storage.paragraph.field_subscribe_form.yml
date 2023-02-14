@@ -1,0 +1,20 @@
+uuid: d1f0c85a-4653-4b9b-9d1f-632952675454
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - webform
+id: paragraph.field_subscribe_form
+field_name: field_subscribe_form
+entity_type: paragraph
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

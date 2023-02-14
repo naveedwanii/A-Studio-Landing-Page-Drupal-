@@ -1,0 +1,10 @@
+uuid: 2784cc07-e51b-438c-8c50-7c49b6e57319
+langcode: en
+status: true
+dependencies: {  }
+id: subscribe_newsletter
+label: 'Subscribe Newsletter'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

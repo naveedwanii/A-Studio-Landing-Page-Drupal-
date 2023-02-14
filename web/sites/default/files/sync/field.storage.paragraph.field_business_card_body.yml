@@ -1,0 +1,20 @@
+uuid: de439101-7745-4bf3-a8a0-9da8ab6c21d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_business_card_body
+field_name: field_business_card_body
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

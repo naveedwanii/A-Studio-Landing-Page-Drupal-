@@ -1,0 +1,21 @@
+uuid: b0c716a1-7cd5-4be7-9094-7739d8409ea0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_digital_product_body
+    - paragraphs.paragraphs_type.digital_product
+  module:
+    - text
+id: paragraph.digital_product.field_digital_product_body
+field_name: field_digital_product_body
+entity_type: paragraph
+bundle: digital_product
+label: 'Digital Product Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: fdc50d9d-6481-492e-b5ff-c93c23dea91c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_business_card_title
+    - paragraphs.paragraphs_type.how_can_we_help_your_bussiness_
+  module:
+    - text
+id: paragraph.how_can_we_help_your_bussiness_.field_business_card_title
+field_name: field_business_card_title
+entity_type: paragraph
+bundle: how_can_we_help_your_bussiness_
+label: 'Business Card Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

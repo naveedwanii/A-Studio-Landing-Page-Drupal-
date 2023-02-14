@@ -1,0 +1,45 @@
+uuid: 948bb056-553c-483b-97ee-a6a893d56912
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_client.field_oc_body
+    - field.field.paragraph.our_client.field_oc_image
+    - field.field.paragraph.our_client.field_oc_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.our_client
+  module:
+    - image
+    - text
+id: paragraph.our_client.default
+targetEntityType: paragraph
+bundle: our_client
+mode: default
+content:
+  field_oc_body:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_oc_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_oc_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

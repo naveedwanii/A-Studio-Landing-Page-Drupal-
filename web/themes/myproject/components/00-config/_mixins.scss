@@ -12,7 +12,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #959595;
+  color: $color-grey-2;
 }
 
 @mixin text-black {
@@ -20,7 +20,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: $color-black;
 }
 
 @mixin text-small {
@@ -28,7 +28,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #565656;
+  color: $color-grey;
 }
 
 @mixin text {
@@ -36,15 +36,15 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-  color: #000000;
+  color: $color-black;
 }
 
 @mixin text-1 {
   font-family: $font-primary;
-  font-weight: 400;
+  // font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-  color: #565656;
+  color: $color-grey;
 }
 
 @mixin text-2 {
@@ -52,7 +52,7 @@
   font-weight: 400;
   font-family: 18px;
   line-height: 28px;
-  color: #757575;
+  color: $color-grey-50;
 }
 
 @mixin heading-small {
@@ -65,15 +65,15 @@
 
 @mixin heading {
   font-family: $font-primary;
-  font-weight: 400;
+  // font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #000000;
+  color: $color-black;
 }
 
 @mixin heading-1 {
   font-family: $font-primary;
-  font-weight: 400;
+  // font-weight: 400;
   font-size: 40px;
   line-height: 49.44px;
   color: $color-black;
@@ -89,4 +89,188 @@
   // padding: 8px;
   text-decoration: none;
   margin-right: 16px;
+}
+
+@mixin button {
+  margin-bottom: 30px;
+  background-color: $color-blue;
+  border-radius: 60px;
+  padding: 20px 40px;
+  border: none;
+  a {
+    font-family: $font-primary;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+@mixin cs-trImg {
+  height: 129px;
+  width: 129px;
+  position: absolute;
+  left: 31rem;
+  z-index: -5;
+  top: -21rem;
+  background: url('.../../../../../images/Ellipse 85.png');
+
+  @include breakpoint($desktop) {
+    left: 39rem;
+    top: 1.1rem;
+  }
+
+  @include breakpoint($large-desktop) {
+    left: 39rem;
+    top: 1.1rem;
+  }
+}
+
+@mixin cs-trImg2 {
+  height: 178px;
+  width: 178px;
+  position: absolute;
+  right: 8rem;
+  z-index: -5;
+  top: 28rem;
+  background: url('.../../../../../images/Rectangle 23.png');
+
+  @include breakpoint($desktop) {
+    top: 21rem;
+  }
+
+  @include breakpoint($large-desktop) {
+    top: 28rem;
+  }
+}
+
+@mixin business-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-white;
+  box-shadow: 0px 2px 4px $color-grey-1;
+  border-radius: 40px;
+  padding: 0 32px 57px;
+  box-sizing: border-box;
+  margin: 0 34px 30px 0;
+}
+
+@mixin business-card-trImg {
+  height: 178px;
+  width: 178px;
+  z-index: -5;
+  position: absolute;
+  margin-left: 82px;
+  margin-bottom: 110px;
+  background-image: url('.../../../../../images/Rectangle 25.png');
+}
+
+@mixin business-card-dotImg {
+  width: 405px;
+  height: 154px;
+  z-index: -5;
+  position: absolute;
+  top: 93rem;
+  margin-left: 125px;
+  background-image: url('.../../../../../images/Group 70.png');
+}
+
+@mixin bg-square-card {
+  height: 121px;
+  width: 121px;
+
+  background-image: url('.../../../../../images/Rectangle 28.png');
+}
+
+@mixin digital-product-trimImg {
+  position: absolute;
+  left: 46rem;
+  width: 178px;
+  height: 178px;
+  z-index: -5;
+  background-image: url('.../../../../../images/Rectangle 26.png');
+  margin-top: -34px;
+
+  @include breakpoint($desktop) {
+    left: 41rem;
+  }
+
+  @include breakpoint($large-desktop) {
+    left: 46rem;
+  }
+}
+
+@mixin dp-videoIcon {
+  background-image: url('.../../../../../images/Group 7.png');
+  position: relative;
+  width: 78px;
+  height: 78px;
+  left: 8rem;
+  top: 10rem;
+  @include breakpoint($tablet) {
+    left: 11rem;
+    top: 11rem;
+  }
+
+  @include breakpoint($desktop) {
+    left: 16rem;
+    top: 15rem;
+  }
+}
+
+@mixin dp-roundImg {
+  // height: 129px;
+  // width: 129px;
+  position: relative;
+  z-index: -5;
+  background: url('.../../../../../images/Ellipse 86.png');
+  @include breakpoint($desktop) {
+    height: 129px;
+    width: 129px;
+    top: -8.6rem;
+    left: 28rem;
+  }
+
+  @include breakpoint($large-desktop) {
+    height: 129px;
+    width: 129px;
+    top: -8.6rem;
+    left: 29rem;
+  }
+}
+
+@mixin business-trImg {
+  position: absolute;
+  top: 56rem;
+  z-index: -5;
+  left: 0;
+  height: 178px;
+  width: 178px;
+  background: url('.../../../../../images/Rectangle 25.png') no-repeat;
+
+  @include breakpoint($tablet) {
+    top: 63rem;
+    left: 1rem;
+  }
+
+  @include breakpoint($desktop) {
+    top: 64rem;
+    left: 2rem;
+  }
+
+  @include breakpoint($large-desktop) {
+    top: 71rem;
+    left: 5rem;
+  }
+}
+
+@mixin hamburger-menu {
+  background-color: $color-blue;
+  border: none;
+  background-image: url('.../../../../../images/hamburger.png');
+  padding: 22px;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 50%;
+  border-radius: 5px;
+  cursor: pointer;
 }

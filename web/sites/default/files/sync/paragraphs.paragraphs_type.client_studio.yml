@@ -1,0 +1,10 @@
+uuid: 093ab03a-1966-4676-8f5d-133b0212ea0d
+langcode: en
+status: true
+dependencies: {  }
+id: client_studio
+label: 'Client Studio'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

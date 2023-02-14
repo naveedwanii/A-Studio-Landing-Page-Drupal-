@@ -1,0 +1,10 @@
+uuid: 688ed922-38c6-455f-bb27-f09605ae57e5
+langcode: en
+status: true
+dependencies: {  }
+id: digital_product
+label: 'Digital Product'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

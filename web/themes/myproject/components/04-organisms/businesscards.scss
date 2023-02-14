@@ -1,110 +1,137 @@
 @import '../config.all';
+.img {
+  background: url('.../../../../../images/Rectangle 24.png') no-repeat right;
+}
 
 .astudio__business-container {
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-image: url('.../../../../../images/Rectangle 24.png');
-}
-
-.astudio__business-title {
-  margin-left: 120px;
-  h2 {
-    width: 358px;
-    @include heading-1();
-  }
-  p {
-    width: 396px;
-    @include text-1();
-  }
-}
-
-.astudio__business-trImg {
-  height: 178px;
-  width: 178px;
-  z-index: -5;
-  position: absolute;
-  margin-left: 82px;
-  margin-bottom: 110px;
-  background-image: url('.../../../../../images/Rectangle 25.png');
-}
-
-.astudio__business-dotImg {
-  width: 405px;
-  height: 154px;
-  z-index: -5;
-  position: absolute;
-  top: 93rem;
-  margin-left: 125px;
-  background-image: url('.../../../../../images/Group 70.png');
-}
-.astudio__business-cards {
-  width: 50%;
-  margin-left: auto;
-  display: grid;
-  grid-template-columns: 20rem 20rem;
-  margin-right: 85px;
-  margin-top: 124px;
-  & div:first-child {
-    margin-top: 75px;
-  }
-  & div:nth-child(3) {
-    margin-top: 30px;
-  }
-  & div:last-child {
-    margin-top: -36px;
-  }
-
-  @include breakpoint($mobile) {
-    display: flex;
-    flex-direction: column;
+  margin-top: 50px;
+  background-size: 80% 60%;
+  .astudio__business-title {
+    max-width: 458px;
     margin-left: 14px;
-    margin-top: 0;
+    h2 {
+      @include heading-1();
+    }
+    p {
+      @include text-1();
+    }
+    @include breakpoint($desktop) {
+      h2 {
+        max-width: 358px;
+        margin-bottom: 30px;
+      }
+      p {
+        max-width: 396px;
+      }
+    }
   }
-}
+  .astudio__business-trImg {
+    @include business-trImg();
+  }
 
-.astudio__business-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: $color-white;
-  box-shadow: 0px 2px 4px $color-grey-1;
-  border-radius: 40px;
-  padding: 0 32px 57px;
-  box-sizing: border-box;
-  margin: 0 34px 30px 0;
-  // margin-right: 34px;
-  // margin-bottom: 30px;
-
-  &-img {
-    height: 121px;
-    width: 121px;
-    background-image: url('.../../../../../images/Rectangle 28.png');
-    &-img1 img {
+  .astudio__business-dotgroupImg {
+    @include breakpoint($desktop) {
+      width: 405px;
+      height: 154px;
+      background: url('.../../../../../images/Group 70.png') no-repeat;
+      z-index: -5;
+      top: 11rem;
       position: relative;
-      top: 4rem;
-      left: 1.6rem;
+    }
+  }
+  .astudio__business-cards {
+    margin: 90px 14px 0 14px;
+
+    @include breakpoint($tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 35px;
+      row-gap: 30px;
+
+      & div:first-child {
+        margin-top: 97px;
+      }
+      & div:nth-child(2) {
+        margin-bottom: 68px;
+      }
+      & div:last-child {
+        margin-top: -58px;
+        margin-bottom: 60px;
+      }
+    }
+
+    @include breakpoint($desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      column-gap: 35px;
+      row-gap: 30px;
+      margin-right: 0;
+      margin-left: 0;
+
+      & div:first-child {
+        margin-top: 97px;
+      }
+      & div:nth-child(2) {
+        margin-bottom: 68px;
+      }
+      & div:last-child {
+        margin-top: -58px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .astudio__business-card {
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+    border: 1px solid $color-white-3;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    margin-bottom: 30px;
+
+    &-img {
+      margin: auto;
+      margin-top: 39px;
+      @include bg-square-card();
+      img {
+        position: relative;
+        left: 1.5rem;
+        top: 1.5rem;
+      }
+    }
+
+    h2 {
+      @include heading();
       text-align: center;
+      margin: 0;
+      padding: 31px 71px 27px 72px;
+    }
+
+    p {
+      @include text-grey();
+      text-align: center;
+      margin: 0;
+      padding: 0 32px 57px 32px;
+    }
+
+    @include breakpoint($desktop) {
+      margin-bottom: 0;
     }
   }
 
-  &-title {
-    @include heading();
-    text-align: center;
-    padding-top: 31px;
-    margin: 0;
+  @include breakpoint($tablet) {
+    margin-top: 80px;
   }
 
-  &-body {
-    @include text-grey();
-    text-align: center;
-    margin: 0;
-    padding-top: 17px;
+  @include breakpoint($desktop) {
+    display: grid;
+    grid-template-columns: 438px 1fr;
+    align-items: center;
+    margin: 0 100px 0 60px;
   }
 
-  @include breakpoint($mobile) {
-    width: 380px;
-    margin-bottom: 66px;
+  @include breakpoint($large-desktop) {
+    margin: 0 183px 0 121px;
   }
 }

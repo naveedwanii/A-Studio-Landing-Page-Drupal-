@@ -40,12 +40,11 @@
 #}
 
 {{ attach_library('myproject/businesscards')}}
-
 <div class='astudio__business-card'>
-     <div class='astudio__business-card-img'>
-       <div class='astudio__business-card-img-img1'>{{ content.field_business_card_image.0 }}</div>
-     </div>
-     <h2 class='astudio__business-card-title'>{{ content.field_business_card_title.0 }}</h2>
-     <p class='astudio__business-card-body'>{{ content.field_business_card_body.0 }}</p>
+  <div class='astudio__business-card-img'>
+    <div class='astudio__business-card-img-img1'>{{ content.field_business_card_image.0 }}</div>
+  </div>
+  <h2>{{ content.field_business_card_title.0 }}</h2>
+  <p>{{ content.field_business_card_body.0 }}</p>
 </div>
 

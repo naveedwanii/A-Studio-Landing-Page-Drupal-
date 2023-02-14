@@ -1,0 +1,21 @@
+uuid: d0402994-f5f0-4ef1-858f-5d9d11b28f9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_business_card_body
+    - paragraphs.paragraphs_type.how_can_we_help_your_bussiness_
+  module:
+    - text
+id: paragraph.how_can_we_help_your_bussiness_.field_business_card_body
+field_name: field_business_card_body
+entity_type: paragraph
+bundle: how_can_we_help_your_bussiness_
+label: 'Business Card Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

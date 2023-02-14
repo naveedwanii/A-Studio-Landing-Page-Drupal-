@@ -45,16 +45,22 @@
  * @ingroup themeable
  */
 #}
-
+{{ attach_library('myproject/container')}}
+{{ attach_library('myproject/header')}}
 <div class="layout-container">
 
   <header role="banner">
+  <div class='astudio__header-container'>
     {{ page.header }}
+    <a href='#'></a>
+    <button class='hamburger'></button>
+  </div>
+
   </header>
+
 
   {{ page.primary_menu }}
   {{ page.secondary_menu }}
-
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}
