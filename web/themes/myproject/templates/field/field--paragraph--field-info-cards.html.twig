@@ -40,5 +40,6 @@
 #}
 
 {% for item in items %}
-  <div{{ attributes.addClass('astudio__footer-secondary') }}>{{ item.content }}</div>
+    <div{{ item.attributes }}>{{ item.content }}</div>
 {% endfor %}
+
