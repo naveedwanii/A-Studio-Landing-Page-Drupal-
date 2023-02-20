@@ -2,8 +2,14 @@
 
 .astudio__footer-container {
   display: block;
-  margin-left: 14px;
+  margin: 10px 0 0 14px;
   padding-left: 0;
+  position: relative;
+  top: -10rem;
+
+  @include breakpoint($desktop) {
+    margin-top: 0;
+  }
   &-li {
     list-style: none;
     margin-right: 50px;
@@ -13,8 +19,12 @@
     }
   }
   &-ul {
-    margin-top: 24px;
+    margin-top: 10px;
     padding: 0;
+
+    @include breakpoint($desktop) {
+      margin-top: 24px;
+    }
   }
 
   .menu-level-0 {
@@ -28,8 +38,11 @@
   @include breakpoint($tablet) {
     display: flex;
     flex-wrap: wrap;
+    top: 0;
   }
   @include breakpoint($desktop) {
+    position: relative;
+    top: -7rem;
     @include d-flex-end();
     align-items: center;
   }
@@ -41,9 +54,6 @@
   &-des {
     margin-right: 120px;
   }
-  &-des p {
-    margin-right: 120px;
-  }
   &-links {
     display: flex;
     a {
@@ -53,10 +63,16 @@
 }
 
 .astudio__footer-container-block {
+  position: relative;
+  top: -11rem;
   margin-left: 14px;
   &-descrip {
     @include text-small();
-    width: 270px;
+    margin-top: 26px;
+    width: 100%;
+    @include breakpoint($desktop) {
+      max-width: 270px;
+    }
   }
   &-sociallinks {
     a[href*='facebook'] {
@@ -86,9 +102,11 @@
       margin-top: 40px;
     }
   }
+  @include breakpoint($tablet) {
+    top: 0;
+  }
   @include breakpoint($desktop) {
-    position: relative;
-    top: 15rem;
+    top: 9rem;
     margin-left: 80px;
   }
 
@@ -100,19 +118,16 @@
 .footer__line {
   &-below {
     border: 1px solid $color-white-1;
-    margin-top: 29px;
-    margin-right: 120px;
+    margin: 29px 120px 0 0;
   }
 
   &-above {
     border: 1px solid $color-white-1;
-    margin-bottom: 60px;
-    margin-right: 120px;
+    margin: 0 120px 60px 0;
   }
 }
 .astudio__footer-secondary {
   @include text-small();
   text-align: center;
-  padding-top: 117px;
-  padding-bottom: 23px;
+  padding: 17px 0 23px 0;
 }
